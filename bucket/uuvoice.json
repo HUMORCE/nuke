@@ -1,17 +1,17 @@
 {
     "homepage": "https://uu.163.com/im",
     "description": "Voice chat platform for gaming.",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "license": {
         "identifier": "EULA",
         "url": "https://uu.163.com/im/agreement.html"
     },
     "architecture": {
         "64bit": {
-            "url": "https://uuvoice.gdl.netease.com/1064/uuvoice_install_x64_1.4.0.exe#/dl.7z"
+            "url": "https://uuvoice.gdl.netease.com/1065/uuvoice_install_x64_1.4.1.exe#/dl.7z"
         },
         "32bit": {
-            "url": "https://uuvoice.gdl.netease.com/1064/uuvoice_install_x86_1.4.0.exe#/dl.7z"
+            "url": "https://uuvoice.gdl.netease.com/1064/uuvoice_install_x86_1.4.1.exe#/dl.7z"
         }
     },
     "shortcuts": [
