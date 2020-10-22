@@ -1,10 +1,10 @@
 {
     "homepage": "https://github.com/JustArchiNET/ArchiSteamFarm",
     "description": "Idling Steam cards from multiple accounts simultaneously.",
-    "version": "4.2.4.0",
+    "version": "4.3.1.0",
     "license": "Apache-2.0",
-    "url": "https://github.com/JustArchiNET/ArchiSteamFarm/releases/download/4.2.4.0/ASF-win-x64.zip",
-    "hash": "355139c7cbb715a3471ca081c58b912ef06b5ccb903cff16f1b0943f6bdd636c",
+    "url": "https://github.com/JustArchiNET/ArchiSteamFarm/releases/download/4.3.1.0/ASF-win-x64.zip",
+    "hash": "b3667ebbc91a5349b811c55a5d4df833fb7ced68967f12e6b07405213ff05a8b",
     "bin": "ArchiSteamFarm.exe",
     "shortcuts": [
         [
