@@ -1,0 +1,36 @@
+{
+    "homepage": "https://www.yy.com/yy8/",
+    "description": "YY voice with componentless",
+    "version": "8.66.0.0",
+    "license": {
+        "identifier": "EULA",
+        "url": "https://zc.yy.com/license.html"
+    },
+    "url": [
+        "https://yydl.duowan.com/4/setup/YYSetup-8.66.0.0-zh-CN.exe#/dl.7z",
+        "https://github.com/HUMORCE/scoop-nuke/raw/master/scripts/yy-setup.ps1"
+    ],
+    "hash": [
+        "1c2dfb9a00d465641e2e39a4cc5d17324e931a58c83b28fadbd20e4e953afcb9",
+        "229e3ea1f0d669eab3da68a59048ccc7bc39811371a602439336369ddb093c5b"
+    ],
+    "extract_dir": "InstallDir",
+    "post_install": [
+        "yy-setup.ps1 $dir $version",
+        "Write-Host 'YY has installed and cleaned up most of components, enjoy it!' -ForegroundColor Yellow"
+    ],
+    "shortcuts": [
+        [
+            "YY.exe",
+            "YY"
+        ]
+    ],
+    "bin": "yy-setup.ps1",
+    "checkver": {
+        "url": "https://www.yy.com/web/pcyy_download/",
+        "regex": "YYSetup-([\\d.]+)-zh-CN.exe"
+    },
+    "autoupdate": {
+        "url": "https://yydl.duowan.com/4/setup/YYSetup-$version-zh-CN.exe#/dl.7z"
+    }
+}
