@@ -1,5 +1,5 @@
 {
-    "version": "6.27",
+    "version": "6.29",
     "description": "a powerful archiver which provides an ultrafast processing speed and convenient features",
     "homepage": "https://www.bandisoft.com/bandizip/old/6/",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://en.bandisoft.com/bandizip/eula/"
     },
     "url": "https://www.bandisoft.com/bandizip/dl.php?old-portable#/BANDIZIP6-PORTABLE.ZIP",
-    "hash": "4d871837dcda579b6f8807783438c4ec0244ef0a6a37a45cf6c02cb2e17cf24b",
+    "hash": "fb3f9db5e0a93aeca35f975cb54893bbc46eecedecf4d9b1088dbb1c378569b1",
     "architecture": {
         "64bit": {
             "pre_install": "Rename-Item \"$dir\\Bandizip64.exe\" 'Bandizip.exe'"
