@@ -1,6 +1,6 @@
 {
     "homepage": "https://github.com/Jessecar96/SteamDesktopAuthenticator",
-    "description": "Desktop implementation of Steam's mobile authenticator app.",
+    "description": "Desktop implementation of Steam's mobile authenticator app",
     "version": "1.0.10",
     "license": "MIT",
     "url": "https://github.com/Jessecar96/SteamDesktopAuthenticator/releases/download/1.0.10/SDA-1.0.10.zip",
@@ -8,7 +8,7 @@
     "bin": [
         [
             "Steam Desktop Authenticator.exe",
-            "steamdesktopauthenticator"
+            "steam-desktop-authenticator"
         ]
     ],
     "shortcuts": [
