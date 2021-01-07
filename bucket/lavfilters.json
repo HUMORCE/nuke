@@ -1,6 +1,6 @@
 {
     "homepage": "https://github.com/Nevcairiel/LAVFilters",
-    "description": "Open-Source DirectShow Media Splitter and Decoders.",
+    "description": "Open-Source DirectShow Media Splitter and Decoders",
     "version": "0.74.1",
     "license": "GPL-2.0-only",
     "architecture": {
