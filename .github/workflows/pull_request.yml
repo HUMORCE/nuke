@@ -1,0 +1,15 @@
+on:
+  pull_request:
+    types: [ opened ]
+name: Pull Requests
+jobs:
+  pullRequestHandler:
+    name: Pull Request Validator
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@main
+    - name: Pull Request Validator
+      uses: Ash258/Scoop-GithubActions@stable-win
+      env:
+        GITH_EMAIL: humorce@outlook.com
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
