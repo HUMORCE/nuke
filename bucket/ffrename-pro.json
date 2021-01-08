@@ -4,15 +4,15 @@
     "version": "4.0",
     "license": {
         "identifier": "EULA",
-        "url": "https://github.com/HUMORCE/scoop-nuke/raw/dist/apps/ffrename-pro/LICENSE.txt"
+        "url": "https://github.com/HUMORCE/scoop-nuke-binary/raw/master/apps/ffrename-pro/LICENSE.txt"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/HUMORCE/scoop-nuke/raw/dist/apps/ffrename-pro/FFRenamePro_x64_4.0.zip",
+            "url": "https://github.com/HUMORCE/scoop-nuke-binary/raw/master/apps/ffrename-pro/FFRenamePro_x64_4.0.zip",
             "hash": "b5661cf87b80f553dd24f391e90853c08eca8fc2f3b695ea323bc3d352b08062"
         },
         "32bit": {
-            "url": "https://github.com/HUMORCE/scoop-nuke/raw/dist/apps/ffrename-pro/FFRenamePro_x86_4.0.zip",
+            "url": "https://github.com/HUMORCE/scoop-nuke-binary/raw/master/apps/ffrename-pro/FFRenamePro_x86_4.0.zip",
             "hash": "fb3f7c6b58cd2a1b13ba0ee4104b0c2caa798f2e26c90acff6188f755f87110d"
         }
     },
