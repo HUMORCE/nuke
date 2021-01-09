@@ -1,0 +1,13 @@
+{
+    "homepage": "https://github.com/TianZerL/Anime4KCPP",
+    "description": "A high performance anime upscaler (DirectShow Filter Only)",
+    "version": "2.4.0",
+    "license": "MIT",
+    "url": "https://github.com/TianZerL/Anime4KCPP/releases/download/v2.4.0/Anime4KCPP_DSFilter-2.4.0-Win64-msvc.7z",
+    "hash": "a2234bee88ebc3570bbaf2ecd4b6eb86b33a9513f4a357c5987901bf609d73f4",
+    "extract_dir": "DSFilter",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/TianZerL/Anime4KCPP/releases/download/v$version/Anime4KCPP_DSFilter-$version-Win64-msvc.7z"
+    }
+}
