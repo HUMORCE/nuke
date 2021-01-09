@@ -1,0 +1,13 @@
+{
+    "homepage": "https://github.com/TianZerL/Anime4KCPP",
+    "description": "A high performance anime upscaler (VapourSynth plugin Only)",
+    "version": "2.4.0",
+    "license": "MIT",
+    "url": "https://github.com/TianZerL/Anime4KCPP/releases/download/v2.4.0/Anime4KCPP_VapourSynth_plugin-2.4.0-Win64-msvc.7z",
+    "hash": "b2aa14e3031fb5ca75f5ab36c5f76789be1c1ca4d624a17981b18349ef6dacfd",
+    "extract_dir": "AviSynthPlus",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/TianZerL/Anime4KCPP/releases/download/v$version/Anime4KCPP_VapourSynth_plugin-$version-Win64-msvc.7z"
+    }
+}
