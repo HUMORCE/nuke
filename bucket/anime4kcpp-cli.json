@@ -1,0 +1,19 @@
+{
+    "homepage": "https://github.com/TianZerL/Anime4KCPP",
+    "description": "A high performance anime upscaler (CLI Only)",
+    "version": "2.4.0",
+    "license": "MIT",
+    "url": "https://github.com/TianZerL/Anime4KCPP/releases/download/v2.4.0/Anime4KCPP_CLI-2.4.0-Win64-msvc.7z",
+    "hash": "2c019614bb3baae1c1103450c2f428a8d8743eb814ced43fa581077ca18f4cda",
+    "extract_dir": "CLI",
+    "bin": [
+        [
+            "Anime4KCPP_CLI\\Anime4KCPP_CLI.exe",
+            "anime4kcpp"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/TianZerL/Anime4KCPP/releases/download/v$version/Anime4KCPP_CLI-$version-Win64-msvc.7z"
+    }
+}
