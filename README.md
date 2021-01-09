@@ -1,13 +1,17 @@
-# Nuke
+# nuke
 
-## Add the bucket to Scoop:
+## Add the bucket to Scoop
 
-`scoop bucket add nuke https://github.com/HUMORCE/scoop-nuke`
+```pwsh
+scoop bucket add nuke https://github.com/HUMORCE/scoop-nuke
+```
 
-## Install apps from Nuke bucket:
+## Install apps from Nuke bucket
 
-```powershell
+```pwsh
+# for unique apps.
 scoop install <app>
 
+# for duplicate apps with other buckets.
 scoop install nuke/<app>
 ```
