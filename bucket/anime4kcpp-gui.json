@@ -1,0 +1,17 @@
+{
+    "##": "TODO: autoupdate",
+    "homepage": "https://github.com/TianZerL/Anime4KCPP",
+    "description": "A high performance anime upscaler (GUI Only)",
+    "version": "2.4.0",
+    "license": "MIT",
+    "url": "https://github.com/TianZerL/Anime4KCPP/releases/download/v2.4.0/Anime4KCPP_GUI-1.11.0-2.4.0-Win64-msvc.7z",
+    "hash": "1f60dde416e6a2365945cf83fb7f3cfc050f1b5054c7028402ac1156967dd7ca",
+    "extract_dir": "GUI",
+    "shortcuts": [
+        [
+            "Anime4KCPP_GUI\\Anime4KCPP_GUI.exe",
+            "Anime4KCPP GUI"
+        ]
+    ],
+    "checkver": "github"
+}
