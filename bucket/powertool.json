@@ -18,7 +18,6 @@
             "Get-ChildItem \"$dir\\PowerTool??.exe\" | Remove-Item"
         ]
     },
-    "bin": "PowerTool.exe",
     "shortcuts": [
         [
             "PowerTool.exe",
