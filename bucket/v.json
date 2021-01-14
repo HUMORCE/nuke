@@ -1,0 +1,22 @@
+{
+    "##": "Duplicate of the vlang package",
+    "homepage": "https://vlang.io",
+    "description": "Simple, fast, safe, compiled. For developing maintainable software",
+    "version": "0.2.1",
+    "license": "MIT",
+    "url": "https://github.com/vlang/v/releases/download/0.2.1/v_windows.zip",
+    "hash": "4eea7507c200fc31e1224fcd03f7af0d3e97d44558fc39491808b0d03d7e6a26",
+    "extract_dir": "v",
+    "bin": [
+        "v.exe"
+    ],
+    "env_add_path": [
+        ".bin"
+    ],
+    "checkver": {
+        "github": "https://github.com/vlang/v"
+    },
+    "autoupdate": {
+        "url": "https://github.com/vlang/v/releases/download/$version/v_windows.zip"
+    }
+}
