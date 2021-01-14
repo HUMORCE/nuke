@@ -1,4 +1,5 @@
 {
+    "##": "Duplicate of the anime4kcpp package",
     "homepage": "https://github.com/TianZerL/Anime4KCPP",
     "description": "A high performance anime upscaler (CLI Only)",
     "version": "2.4.0",
