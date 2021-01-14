@@ -1,0 +1,38 @@
+{
+    "##": "Duplicate of the proxychains package",
+    "homepage": "https://github.com/shunf4/proxychains-windows",
+    "description": "Windows and Cygwin port of proxychains, based on MinHook and DLL Injection",
+    "version": "0.6.8",
+    "license": "GPL-2.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shunf4/proxychains-windows/releases/download/0.6.8/proxychains_0.6.8_win32_x64.zip",
+            "bin": [
+                [
+                    "proxychains_win32_x64.exe",
+                    "proxychains"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://github.com/shunf4/proxychains-windows/releases/download/0.6.8/proxychains_0.6.8_win32_x86.zip",
+            "bin": [
+                [
+                    "proxychains_win32_x86.exe",
+                    "proxychains"
+                ]
+            ]
+        }
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/shunf4/proxychains-windows/releases/download/$version/proxychains_$version_win32_x64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/shunf4/proxychains-windows/releases/download/$version/proxychains_$version_win32_x86.zip"
+            }
+        }
+    }
+}
