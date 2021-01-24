@@ -101,7 +101,9 @@ $list_data_replace =
 "$data_dir\yy\yycomstore\2052\com.yy.webrunlogin",
 "$data_dir\yy\yycomstore\2052\com.yy.yycgame",
 "$data_dir\yy\yycomstore\2052\com.yy.yycocos",
-"$data_dir\yy\yycomstore\2052\com.yy.yypkshow"
+"$data_dir\yy\yycomstore\2052\com.yy.yypkshow",
+"$data_dir\yy\yycomstore\2052\com.yy.zhongtaisdk",
+
 
 function setup_replace {
     param (
