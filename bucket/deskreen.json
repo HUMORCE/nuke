@@ -21,6 +21,6 @@
         "github": "https://github.com/pavlobu/deskreen"
     },
     "autoupdate": {
-        "url": "https://github.com/pavlobu/deskreen/releases/download/v$version/Deskreen.Setup.$version.exe"
+        "url": "https://github.com/pavlobu/deskreen/releases/download/v$version/Deskreen.Setup.$version.exe#/dl.7z"
     }
 }
