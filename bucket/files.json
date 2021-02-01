@@ -1,0 +1,23 @@
+{
+    "homepage": "https://github.com/files-community/Files",
+    "description": "A modern file explorer that pushes the boundaries of the platform",
+    "version": "1.2",
+    "license": "GPL-3.0-Only",
+    "url": "https://github.com/files-community/Files/releases/download/v1.2/Files-1.2.Msixbundle",
+    "hash": "4027ff2dbb31db3e1cb109dc4a25e500c58b63d9da114b5fbae64fdce68f14e9",
+    "installer": {
+        "script": [
+            "Add-AppxPackage -Path \"$dir\\$fname\"",
+            "Remove-Item \"$dir\\$fname\""
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Get-AppxPackage -Name 49306atecsolution.FilesUWP | Remove-AppxPackage"
+        ]
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/files-community/Files/releases/download/v$version/Files-$version.Msixbundle"
+    }
+}
