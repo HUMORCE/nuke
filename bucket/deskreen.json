@@ -1,10 +1,10 @@
 {
     "homepage": "https://deskreen.com",
     "description": "Turns any device with a web browser into a secondary screen for your computer",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "license": "AGPL-3.0-only",
-    "url": "https://github.com/pavlobu/deskreen/releases/download/v1.0.3/Deskreen.Setup.1.0.3.exe#/dl.7z",
-    "hash": "6a306baf7aa2dba47e0742fe0219ad8c80b87ce11d54f263172f40c646a8053f",
+    "url": "https://github.com/pavlobu/deskreen/releases/download/v1.0.4/Deskreen.Setup.1.0.4.exe#/dl.7z",
+    "hash": "b5849aa9640d62fcad1eff6ec5c15c32bc0199de9b5af4f946b40b8ff9437d91",
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
