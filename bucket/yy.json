@@ -1,17 +1,17 @@
 {
     "homepage": "https://www.yy.com/yy8/",
     "description": "YY voice with componentless",
-    "version": "8.67.0.1",
+    "version": "8.68.0.2",
     "license": {
         "identifier": "EULA",
         "url": "https://zc.yy.com/license.html"
     },
     "url": [
-        "https://yydl.duowan.com/4/setup/YYSetup-8.67.0.1-zh-CN.exe#/dl.7z",
+        "https://yydl.duowan.com/4/setup/YYSetup-8.68.0.2-zh-CN.exe#/dl.7z",
         "https://github.com/HUMORCE/scoop-nuke/raw/master/scripts/yy-setup.ps1"
     ],
     "hash": [
-        "7c117e7d9d5c57f6458fc7dfafc890261bb0ca468cbf0ce13571e8615068cecc",
+        "c309dbbbb1746f00a18be0919b489dc93c6ce7e2970b411007405b5860975bf0",
         "229e3ea1f0d669eab3da68a59048ccc7bc39811371a602439336369ddb093c5b"
     ],
     "extract_dir": "InstallDir",
