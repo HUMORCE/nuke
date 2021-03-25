@@ -16,8 +16,7 @@
     ],
     "extract_dir": "InstallDir",
     "post_install": [
-        "yy-setup.ps1 $dir $version",
-        "Write-Host 'YY has installed and cleaned up most of components, enjoy it!' -ForegroundColor Yellow"
+        "yy-setup.ps1 $dir $version"
     ],
     "shortcuts": [
         [
