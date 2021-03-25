@@ -5,18 +5,19 @@ param(
 
 $data_dir = $env:APPDATA + "\duowan"
 
-$list_struct =
+$struct =
 "$data_dir\yy\business\",
+"$data_dir\yy\cache\",
 "$data_dir\yy\openplatform\",
 "$data_dir\yy\yycomstore\2052\"
 
-$list_app_remove =
+$app_remove =
 # \$app_version\
 "$app_dir\$app_version\BugReport.exe",
 "$app_dir\$app_version\yystatistics.dll",
 "$app_dir\$app_version\yyversion.dll"
 
-$list_app_replace =
+$app_replace =
 # \Microsoft.VC90.CRT\
 "$app_dir\Microsoft.VC90.CRT\msvcm90.dll",
 "$app_dir\Microsoft.VC90.CRT\msvcp90.dll",
@@ -26,7 +27,7 @@ $list_app_replace =
 "$app_dir\$app_version\components\com.yy.gameproxy",
 "$app_dir\$app_version\components\com.yy.vip"
 
-$list_data_replace =
+$data_replace =
 # \
 "$data_dir\gamebox",
 "$data_dir\phonetreasure",
@@ -45,6 +46,8 @@ $list_data_replace =
 "$data_dir\yy\business\gamesmilies",
 "$data_dir\yy\business\garbagecleaner",
 "$data_dir\yy\business\logingiftbag",
+# \yy\cache\
+"$data_dir\yy\cache\download",
 # \yy\openplatform\
 "$data_dir\yy\openplatform\aggame",
 # \yy\yycomstore\2052\
@@ -92,6 +95,7 @@ $list_data_replace =
 "$data_dir\yy\yycomstore\2052\com.yy.logingiftbag",
 "$data_dir\yy\yycomstore\2052\com.yy.mostoolassist",
 "$data_dir\yy\yycomstore\2052\com.yy.mostoolTeamfightTactics",
+"$data_dir\yy\yycomstore\2052\com.yy.officialnews",
 "$data_dir\yy\yycomstore\2052\com.yy.phonetreasure",
 "$data_dir\yy\yycomstore\2052\com.yy.template.gametaskcenter",
 "$data_dir\yy\yycomstore\2052\com.yy.videoondemand",
@@ -102,42 +106,41 @@ $list_data_replace =
 "$data_dir\yy\yycomstore\2052\com.yy.yycgame",
 "$data_dir\yy\yycomstore\2052\com.yy.yycocos",
 "$data_dir\yy\yycomstore\2052\com.yy.yypkshow",
-"$data_dir\yy\yycomstore\2052\com.yy.zhongtaisdk",
-"$data_dir\yy\yycomstore\2052\com.yy.officialnews"
+"$data_dir\yy\yycomstore\2052\com.yy.zhongtaisdk"
 
 
-function setup_replace {
+function yy_replace {
     param (
         $list
     )
     foreach ($item in $list) {
         if (Test-Path $item) {
-            $obj = Get-Item $item
-            $obj.Attributes = "Archive"
-            Remove-Item $obj -Force -Recurse
+            $file = Get-Item $item
+            $file.Attributes = "Archive"
+            Remove-Item $file -Force -Recurse
             New-Item $item
-            $obj.Attributes = "Readonly"
+            $file.Attributes = "Readonly"
         }
         else {
             New-Item $item
-            $obj = Get-Item $item
-            $obj.Attributes = "Readonly"
+            $file = Get-Item $item
+            $file.Attributes = "Readonly"
         }
     }
 }
-function setup_remove {
+function yy_remove {
     param (
         $list
     )
     foreach ($item in $list) {
         if (Test-Path $item) {
-            $obj = Get-Item $item
-            $obj.Attributes = "Archive"
-            Remove-Item $obj -Force -Recurse
+            $file = Get-Item $item
+            $file.Attributes = "Archive"
+            Remove-Item $file -Force -Recurse
         }
     }
 }
-function setup_struct {
+function yy_struct {
     param (
         $list
     )
@@ -148,7 +151,7 @@ function setup_struct {
     }
 }
 
-setup_struct $list_struct | Out-Null
-setup_replace $list_data_replace | Out-Null
-setup_remove $list_app_remove | Out-Null
-setup_replace $list_app_replace | Out-Null
+yy_struct $struct | Out-Null
+yy_replace $data_replace | Out-Null
+yy_remove $app_remove | Out-Null
+yy_replace $app_replace | Out-Null
