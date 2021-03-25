@@ -1,0 +1,29 @@
+{
+    "homepage": "https://www.telerik.com/fiddler/add-ons",
+    "description": "scans GIF, JPEG and PNG image files for unnecessary embedded metadata",
+    "version": "nightly",
+    "license": "MIT",
+    "suggest": {
+        "fiddler": "nuke/fiddler"
+    },
+    "url": "https://telerik-fiddler.s3.amazonaws.com/fiddler/addons/fiddlershowimagebloat.exe#dl.7z",
+    "pre_install": [
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse"
+    ],
+    "installer": {
+        "script": [
+            "if (Test-Path \"$(appdir fiddler $global)\\current\\Fiddler.exe\") { ",
+            "Copy-Item \"$dir\\ImageBloat.dll\" -Destination \"$(appdir fiddler $global)\\current\\Scripts\" -ErrorAction SilentlyContinue }",
+            "if (Test-Path \"$(appdir fiddler $global)\\current\\persist\") { ",
+            "Copy-Item \"$dir\\ImageBloat.dll\" -Destination \"$(appdir fiddler $global)\\current\\persist\\Scripts\" -ErrorAction SilentlyContinue }"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if (Test-Path \"$(appdir fiddler $global)\\current\\Fiddler.exe\") { ",
+            "Remove-Item \"$(appdir fiddler $global)\\current\\Scripts\\ImageBloat.dll\" -ErrorAction SilentlyContinue }",
+            "if (Test-Path \"$(appdir fiddler $global)\\current\\persist\") { ",
+            "Remove-Item \"$(appdir fiddler $global)\\current\\persist\\Scripts\\ImageBloat.dll\" -ErrorAction SilentlyContinue }"
+        ]
+    }
+}
