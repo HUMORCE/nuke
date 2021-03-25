@@ -1,0 +1,26 @@
+{
+    "homepage": "https://www.telerik.com/fiddler/add-ons",
+    "description": "Flags responses that set cookies and color codes based on P3P headers",
+    "version": "nightly",
+    "license": "MIT",
+    "suggest": {
+        "fiddler": "nuke/fiddler"
+    },
+    "url": "https://telerik-fiddler.s3.amazonaws.com/fiddler/addons/fiddlerprivacyscanner.exe#dl.7z",
+    "installer": {
+        "script": [
+            "if (Test-Path \"$(appdir fiddler $global)\\current\\Fiddler.exe\") { ",
+            "Copy-Item \"$dir\\CookieTag.dll\" -Destination \"$(appdir fiddler $global)\\current\\Scripts\" -ErrorAction SilentlyContinue }",
+            "if (Test-Path \"$(appdir fiddler $global)\\current\\persist\") { ",
+            "Copy-Item \"$dir\\CookieTag.dll\" -Destination \"$(appdir fiddler $global)\\current\\persist\\Scripts\" -ErrorAction SilentlyContinue }"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if (Test-Path \"$(appdir fiddler $global)\\current\\Fiddler.exe\") { ",
+            "Remove-Item \"$(appdir fiddler $global)\\current\\Scripts\\CookieTag.dll\" -ErrorAction SilentlyContinue }",
+            "if (Test-Path \"$(appdir fiddler $global)\\current\\persist\") { ",
+            "Remove-Item \"$(appdir fiddler $global)\\current\\persist\\Scripts\\CookieTag.dll\" -ErrorAction SilentlyContinue }"
+        ]
+    }
+}
