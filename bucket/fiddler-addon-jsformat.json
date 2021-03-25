@@ -1,0 +1,26 @@
+{
+    "homepage": "https://www.telerik.com/fiddler/add-ons",
+    "description": "Simple tool for formatting JavaScript",
+    "version": "nightly",
+    "license": "MIT",
+    "suggest": {
+        "fiddler": "nuke/fiddler"
+    },
+    "url": "https://telerik-fiddler.s3.amazonaws.com/fiddler/addons/fiddlerjsformatsetup.exe#dl.7z",
+    "installer": {
+        "script": [
+            "if (Test-Path \"$(appdir fiddler $global)\\current\\Fiddler.exe\") { ",
+            "Copy-Item \"$dir\\JSFormat.dll\" -Destination \"$(appdir fiddler $global)\\current\\Scripts\" -ErrorAction SilentlyContinue }",
+            "if (Test-Path \"$(appdir fiddler $global)\\current\\persist\") { ",
+            "Copy-Item \"$dir\\JSFormat.dll\" -Destination \"$(appdir fiddler $global)\\current\\persist\\Scripts\" -ErrorAction SilentlyContinue }"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if (Test-Path \"$(appdir fiddler $global)\\current\\Fiddler.exe\") { ",
+            "Remove-Item \"$(appdir fiddler $global)\\current\\Scripts\\JSFormat.dll\" -ErrorAction SilentlyContinue }",
+            "if (Test-Path \"$(appdir fiddler $global)\\current\\persist\") { ",
+            "Remove-Item \"$(appdir fiddler $global)\\current\\persist\\Scripts\\JSFormat.dll\" -ErrorAction SilentlyContinue }"
+        ]
+    }
+}
