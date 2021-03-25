@@ -1,0 +1,27 @@
+{
+    "homepage": "https://github.com/lulianqi/FreeHttp",
+    "description": "Fiddler addon for modific http requset and response",
+    "version": "2.2.1",
+    "license": "MIT",
+    "suggest": {
+        "fiddler": "nuke/fiddler"
+    },
+    "url": "https://lulianqi.com/file/FreeHttp2.2.1.zip",
+    "hash": "552042e1f808115cb4d36dd0660876613a1c98f1479294cd56a254923f39401c",
+    "extract_dir": "FreeHttp2.2.1",
+    "installer": {
+        "script": [
+            "if (Test-Path \"$(appdir fiddler $global)\\current\\Fiddler.exe\") { ",
+            "Copy-Item -Path \"$dir\\FreeHttp.dll\" -Destination \"$(appdir fiddler $global)\\current\\Scripts\" -ErrorAction SilentlyContinue }",
+            "if (Test-Path \"$(appdir fiddler $global)\\current\\persist\") { ",
+            "Copy-Item -Path \"$dir\\FreeHttp.dll\" -Destination \"$(appdir fiddler $global)\\current\\persist\\Scripts\" -ErrorAction SilentlyContinue }"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Get-ChildItem \"$(appdir fiddler $global)\\current\\Scripts\\*\" -Include 'FreeHttp.dll' | Remove-Item -ErrorAction SilentlyContinue",
+            "if (Test-Path \"$(appdir fiddler $global)\\current\\persist\") { ",
+            "Get-ChildItem \"$(appdir fiddler $global)\\current\\persist\\Scripts\\*\" -Include 'FreeHttp.dll' | Remove-Item -ErrorAction SilentlyContinue }"
+        ]
+    }
+}
