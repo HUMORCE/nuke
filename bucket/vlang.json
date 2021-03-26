@@ -1,5 +1,4 @@
 {
-    "##": "Duplicate of the v package",
     "homepage": "https://vlang.io",
     "description": "Simple, fast, safe, compiled. For developing maintainable software",
     "version": "0.2.2",
