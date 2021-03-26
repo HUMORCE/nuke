@@ -1,5 +1,4 @@
 {
-    "##": "Duplicate of the proxychains-windows package",
     "homepage": "https://github.com/shunf4/proxychains-windows",
     "description": "Windows and Cygwin port of proxychains, based on MinHook and DLL Injection",
     "version": "0.6.8",
