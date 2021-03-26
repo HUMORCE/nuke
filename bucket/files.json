@@ -1,10 +1,10 @@
 {
     "homepage": "https://github.com/files-community/Files",
     "description": "A modern file explorer that pushes the boundaries of the platform",
-    "version": "1.3",
+    "version": "1.5",
     "license": "GPL-3.0-Only",
-    "url": "https://github.com/files-community/Files/releases/download/v1.3/Files-1.3.Msixbundle",
-    "hash": "54e24dee53717f56e2f3b456a62ae82ff16d9d03431e8776aaf5bdb0c5b61659",
+    "url": "https://github.com/files-community/Files/releases/download/v1.5/Files-1.5.Msixbundle",
+    "hash": "0209aab62bf751b9ff5a73c3063c84b5cdbc912c74089ea9d8fc79c0a2e3e536",
     "installer": {
         "script": [
             "Add-AppxPackage -Path \"$dir\\$fname\"",
