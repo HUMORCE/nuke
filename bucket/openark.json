@@ -10,7 +10,7 @@
             "pre_install": "Rename-Item \"$dir\\OpenArk64.exe\" 'OpenArk.exe'"
         },
         "32bit": {
-            "url": "https://github.com/BlackINT3/OpenArk/releases/download/v1.1.0/OpenArk64.exe",
+            "url": "https://github.com/BlackINT3/OpenArk/releases/download/v1.1.0/OpenArk32.exe",
             "hash": "550056c99590a902d9df4a2dfbf75da9f045dd8fb25099b30b34f0ca3937a2e1",
             "pre_install": "Rename-Item \"$dir\\OpenArk32.exe\" 'OpenArk.exe'"
         }
@@ -30,7 +30,7 @@
                 "url": "https://github.com/BlackINT3/OpenArk/releases/download/v$version/OpenArk64.exe"
             },
             "32bit": {
-                "url": "https://github.com/BlackINT3/OpenArk/releases/download/v$version/OpenArk64.exe"
+                "url": "https://github.com/BlackINT3/OpenArk/releases/download/v$version/OpenArk32.exe"
             }
         }
     }
