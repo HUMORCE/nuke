@@ -1,6 +1,6 @@
 {
     "homepage": "https://github.com/Rigellute/spotify-tui",
-    "description": "Spotify for the terminal",
+    "description": "A Spotify client for the terminal",
     "version": "0.23.0",
     "license": "MIT",
     "architecture": {
