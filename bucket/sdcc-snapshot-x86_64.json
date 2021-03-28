@@ -1,6 +1,6 @@
 {
     "homepage": "http://sdcc.sourceforge.net",
-    "description": "Small Device C Compiler (x86_64-w64-mingw32)",
+    "description": "A retargettable, optimizing Standard C (ANSI C89, ISO C99, ISO C11) compiler suite that targets the Intel MCS51 based, Maxim (Dallas) DS80C390 variants, Freescale (Motorola) HC08 based, Zilog Z80 based MCUs, Padauk and STMicroelectronics STM8 (x86_64-w64-mingw32)",
     "version": "20210327-12172",
     "license": "GPL-2.0-only|GPL-3.0-only",
     "architecture": {
