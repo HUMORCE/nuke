@@ -7,7 +7,6 @@
     "hash": "6b8f305d4bcab619b5e94ab1388130dbf78417e32f2c72bcd5135c70b2c78983",
     "extract_dir": "v",
     "bin": "v.exe",
-    "env_add_path": ".bin",
     "checkver": {
         "github": "https://github.com/vlang/v",
         "regex": "/releases/tag/weekly\\.([\\d.]+)"
