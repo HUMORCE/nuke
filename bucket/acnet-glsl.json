@@ -3,18 +3,8 @@
     "description": "ACNet (Anime4KCPP Net) re-implemented in GLSL for real-time anime upscaling",
     "version": "1.0.0",
     "license": "MIT",
-    "depends": "extras/mpv",
     "url": "https://github.com/TianZerL/ACNetGLSL/releases/download/v1.0.0/ACNet_1.0.0_mpv_shaders.zip",
     "hash": "b24158f621f03d88871599a396a99f50ca95eb9ab3fa0bc3e63f5a4c8a1b9c7a",
-    "installer": {
-        "script": [
-            "New-Item \"$(appdir mpv $global)\\current\\portable_config\\plugins\\ACNet\" -ItemType Directory | Out-Null",
-            "Copy-Item \"$dir\\*.glsl\" \"$(appdir mpv $global)\\current\\portable_config\\plugins\\acnet\""
-        ]
-    },
-    "uninstaller": {
-        "script": "Remove-Item \"$(appdir mpv $global)\\current\\portable_config\\plugins\\acnet\" -Force -Recurse"
-    },
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/TianZerL/ACNetGLSL/releases/download/v$version/ACNet_$version_mpv_shaders.zip"
