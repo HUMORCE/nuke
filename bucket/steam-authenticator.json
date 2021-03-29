@@ -5,6 +5,12 @@
     "license": "MIT",
     "url": "https://github.com/Jessecar96/SteamDesktopAuthenticator/releases/download/1.0.10/SDA-1.0.10.zip",
     "hash": "93a78a1e06d464dce620998569577eadd78c9619042b20854b558cbb1d3d46b7",
+    "bin": [
+        [
+            "Steam Desktop Authenticator.exe",
+            "steam-authenticator"
+        ]
+    ],
     "shortcuts": [
         [
             "Steam Desktop Authenticator.exe",
