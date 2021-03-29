@@ -40,8 +40,6 @@
         }
     },
     "notes": [
-        "When the program asking for \"put SandBoxes folder into it's parent directory\", you ",
-        "should select \"No\" for keep directory structure of scoop, and protect your sandbox data.",
-        "The parent directory will be deleted when uninstalling."
+        "When the program asking for \"put SandBoxes folder into it's parent directory\", you should select \"No\" for keep directory structure of scoop, and protect your sandbox data, because the parent directory will be deleted when uninstalling."
     ]
 }
