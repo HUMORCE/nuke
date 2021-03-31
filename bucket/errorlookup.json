@@ -1,0 +1,27 @@
+{
+    "homepage": "https://www.henrypp.org/product/errorlookup",
+    "description": "Translating error codes into a more meaningful text description",
+    "version": "2.4.1",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/henrypp/errorlookup/releases/download/v.2.4.1/errorlookup-2.4.1-bin.zip",
+    "hash": "3d7907743b6733ea304344789d9c7981ee741571dc43bc01567dc0f5fe1270f6",
+    "architecture": {
+        "64bit": {
+            "extract_dir": "errorlookup\\64"
+        },
+        "32bit": {
+            "extract_dir": "errorlookup\\32"
+        }
+    },
+    "persist": "errorlookup.ini",
+    "shortcuts": [
+        [
+            "errorlookup.exe",
+            "Error Lookup"
+        ]
+    ],
+    "checkver": "softwareVersion\">([\\d.]+)",
+    "autoupdate": {
+        "url": "https://github.com/henrypp/errorlookup/releases/download/v.$version/errorlookup-$version-bin.zip"
+    }
+}
