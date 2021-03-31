@@ -1,0 +1,21 @@
+{
+    "homepage": "https://www.henrypp.org/product/hostsmgr",
+    "description": "Console tool for sysadmins and other peoples who need to autoupdate \"hosts\" file",
+    "version": "2.0",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/henrypp/hostsmgr/releases/download/v.2.0/hostsmgr-2.0-bin.zip",
+    "hash": "a050d2b258aa178174ef3f271eb3b338b3345b07deed1dee1f868e7054efd796",
+    "architecture": {
+        "64bit": {
+            "extract_dir": "hostsmgr\\64"
+        },
+        "32bit": {
+            "extract_dir": "hostsmgr\\32"
+        }
+    },
+    "bin": "hostsmgr.exe",
+    "checkver": "softwareVersion\">([\\d.]+)",
+    "autoupdate": {
+        "url": "https://github.com/henrypp/hostsmgr/releases/download/v.$version/hostsmgr-$version-bin.zip"
+    }
+}
