@@ -1,6 +1,6 @@
 {
     "homepage": "https://www.wechat.com",
-    "description": "Free messaging and calling app.",
+    "description": "Free messaging and calling app",
     "version": "3.2.1.127",
     "license": {
         "identifier": "WECHAT – TERMS OF SERVICE",
@@ -20,6 +20,9 @@
         "regex": "WeChatSetup_(\\d.+)\\.exe"
     },
     "autoupdate": {
-        "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#dl.7z"
+        "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#dl.7z",
+        "hash": {
+            "mode": "download"
+        }
     }
 }
