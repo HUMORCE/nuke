@@ -1,0 +1,31 @@
+{
+    "homepage": "https://github.com/be5invis/Sarasa-Gothic",
+    "description": "A CJK programming font based on Iosevka and Source Han Sans (Regional orthography: TC)",
+    "version": "0.21.0",
+    "license": "OFL-1.1",
+    "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v0.21.0/sarasa-gothic-ttf-0.21.0.7z#/dl.7z_",
+    "hash": "e127bcc3883ff6407e9a8cbf115cb736f843dd2e6b5cd986134bfa1ec74ab67c",
+    "installer": {
+        "script": [
+            "Invoke-ExternalCommand 7z -ArgumentList('e', \"$dir\\dl.7z_\" ,\"-o$dir\", '*-tc-*.ttf')",
+            "Remove-Item \"$dir\\dl.7z_\"",
+            "New-Item -Path 'HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts\\Sarasa Gothic TC' -Force -ErrorAction SilentlyContinue | Out-Null",
+            "Get-ChildItem $dir -filter 'sarasa*.ttf' | ForEach-Object {",
+            "  $font_name = (Get-Culture).TextInfo.ToTitleCase($_.BaseName.Replace('-', ' ')) + ' (TrueType)'",
+            "  $font_name = $font_name.Replace(' Tc ', ' TC ')",
+            "  New-ItemProperty -Path 'HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts\\Sarasa Gothic TC' -Name $font_name -Value $_.FullName -Force | Out-Null",
+            "}",
+            "Write-Host \"The 'Sarasa Gothic TC' Font family has been installed for current user.\" -Foreground Magenta"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Remove-Item -Path 'HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts\\Sarasa Gothic TC' -Force -ErrorAction SilentlyContinue",
+            "Write-Host \"The 'Sarasa Gothic TC' Font family has been uninstalled.\" -Foreground Magenta"
+        ]
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/be5invis/Sarasa-Gothic/releases/download/v$version/sarasa-gothic-ttf-$version.7z#/dl.7z_"
+    }
+}
