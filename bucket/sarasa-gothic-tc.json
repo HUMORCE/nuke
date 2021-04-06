@@ -13,7 +13,9 @@
             "Get-ChildItem $dir -filter 'sarasa*.ttf' | ForEach-Object {",
             "  $font_name = (Get-Culture).TextInfo.ToTitleCase($_.BaseName.Replace('-', ' ')) + ' (TrueType)'",
             "  $font_name = $font_name.Replace(' Tc ', ' TC ')",
-            "  New-ItemProperty -Path 'HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts\\Sarasa Gothic TC' -Name $font_name -Value $_.FullName -Force | Out-Null",
+            "  $file_name = $_.Name",
+            "  New-Item -ItemType HardLink -Path \"$env:LOCALAPPDATA\\Microsoft\\Windows\\Fonts\\$file_name\" -Value \"$dir\\$file_name\" -Force -ErrorAction SilentlyContinue | Out-Null",
+            "  New-ItemProperty -Path 'HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts\\Sarasa Gothic TC' -Name $font_name -Value \"$dir\\$file_name\" -Force | Out-Null",
             "}",
             "Write-Host \"The 'Sarasa Gothic TC' Font family has been installed for current user.\" -Foreground Magenta"
         ]
@@ -21,6 +23,10 @@
     "uninstaller": {
         "script": [
             "Remove-Item -Path 'HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts\\Sarasa Gothic TC' -Force -ErrorAction SilentlyContinue",
+            "Get-ChildItem $dir -filter 'sarasa*.ttf' | ForEach-Object {",
+            "  $file_name = $_.Name",
+            "  Remove-Item -Path \"$env:LOCALAPPDATA\\Microsoft\\Windows\\Fonts\\$file_name\" -Force -ErrorAction SilentlyContinue | Out-Null",
+            "}",
             "Write-Host \"The 'Sarasa Gothic TC' Font family has been uninstalled.\" -Foreground Magenta"
         ]
     },
