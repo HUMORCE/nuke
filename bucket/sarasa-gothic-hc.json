@@ -15,7 +15,7 @@
             "  $font_name = $font_name.Replace(' Hc ', ' HC ')",
             "  $file_name = $_.Name",
             "  New-Item -ItemType HardLink -Path \"$env:LOCALAPPDATA\\Microsoft\\Windows\\Fonts\\$file_name\" -Value \"$dir\\$file_name\" -Force -ErrorAction SilentlyContinue | Out-Null",
-            "  New-ItemProperty -Path 'HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts\\Sarasa Gothic HC' -Name $font_name -Value \"$dir\\$file_name\" -Force | Out-Null",
+            "  New-ItemProperty -Path 'HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts\\Sarasa Gothic HC' -Name $font_name -Value \"$env:LOCALAPPDATA\\Microsoft\\Windows\\Fonts\\$file_name\" -Force | Out-Null",
             "}",
             "Write-Host \"The 'Sarasa Gothic HC' Font family has been installed for current user.\" -Foreground Magenta"
         ]
