@@ -15,5 +15,6 @@
             "apimonitor-x86.exe",
             "API Monitor (x86)"
         ]
-    ]
+    ],
+    "##": "TODO: checkver/autoupdate"
 }
