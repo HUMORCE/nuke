@@ -1,16 +1,16 @@
 {
     "homepage": "https://github.com/sandboxie-plus/Sandboxie",
     "description": "A sandbox-based isolation software for 32- and 64-bit Windows NT-based operating systems",
-    "version": "0.7.2",
+    "version": "0.7.4",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/0.7.2/Sandboxie-Plus-x64-v0.7.2.exe",
-            "hash": "7ee710c0182215b2c8c51f39708e7c83f63cb08183bc55a8b71f8c9351de6678"
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/0.7.4/Sandboxie-Plus-x64-v0.7.4.exe",
+            "hash": "c48e23d3db8ad3023e3fa477a9b9fc3994a69ca52c667717559bfbd3e9d403c8"
         },
         "32bit": {
-            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/0.7.2/Sandboxie-Plus-x86-v0.7.2.exe",
-            "hash": "d7fcfea4ccc5bee7e39e3ba3e0d9bd777f079b3b269342e6d84394e1e94178bd"
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/0.7.4/Sandboxie-Plus-x86-v0.7.4.exe",
+            "hash": "8c7aa7b96fcb5c133d0c3ccad9c77f3b6b82bd55fd45ac15fed4f0dfe92aa1ad"
         }
     },
     "innosetup": true,
@@ -39,7 +39,5 @@
             }
         }
     },
-    "notes": [
-        "When the program asking for \"put SandBoxes folder into it's parent directory\", you should select \"No\" for keep directory structure of scoop, and protect your sandbox data, because the parent directory will be deleted when uninstalling."
-    ]
+    "notes": "When the program asking for \"put SandBoxes folder into it's parent directory\", you should select \"No\" for keep directory structure of scoop, and protect your sandbox data, because the parent directory will be deleted when uninstalling."
 }
