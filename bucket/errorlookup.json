@@ -13,6 +13,10 @@
             "extract_dir": "errorlookup\\32"
         }
     },
+    "pre_install": [
+        "if (!(Test-Path \"$dir\\errorlookup.ini\")) {",
+        "New-Item \"$dir\\errorlookup.ini\" | Out-Null }"
+    ],
     "persist": "errorlookup.ini",
     "shortcuts": [
         [
