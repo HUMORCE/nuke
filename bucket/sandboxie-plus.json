@@ -16,7 +16,7 @@
     "innosetup": true,
     "pre_install": [
         "ensure \"$persist_dir\" | Out-Null",
-        "Get-ChildItem \"$persist_dir\\*\" -Include 'Sandboxie.db', 'Sandboxie-Plus.ini' | Copy-Item -Destination \"$dir\" -ErrorAction SilentlyContinue"
+        "Get-ChildItem \"$persist_dir\\*\" -Include 'Sandboxie.ini', 'Sandboxie-Plus.ini' | Copy-Item -Destination \"$dir\" -ErrorAction SilentlyContinue"
     ],
     "uninstaller": {
         "script": "Get-ChildItem \"$dir\\*\" -Include 'Sandboxie.ini', 'Sandboxie-Plus.ini' | Copy-Item -Destination \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
