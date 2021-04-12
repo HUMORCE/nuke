@@ -15,9 +15,12 @@
     },
     "innosetup": true,
     "pre_install": [
-        "if (!(Test-Path \"$dir\\Sandboxie.ini\")) {",
-        "  New-Item -Path \"$dir\\Sandboxie.ini\" | Out-Null }"
+        "ensure \"$persist_dir\" | Out-Null",
+        "Get-ChildItem \"$persist_dir\\*\" -Include 'Sandboxie.db', 'Sandboxie-Plus.ini' | Copy-Item -Destination \"$dir\" -ErrorAction SilentlyContinue"
     ],
+    "uninstaller": {
+        "script": "Get-ChildItem \"$dir\\*\" -Include 'Sandboxie.ini', 'Sandboxie-Plus.ini' | Copy-Item -Destination \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
+    },
     "shortcuts": [
         [
             "SandMan.exe",
@@ -27,10 +30,6 @@
             "SbieCtrl.exe",
             "Sandboxie Legacy"
         ]
-    ],
-    "persist": [
-        "Sandboxie.ini",
-        "Sandboxie-Plus.ini"
     ],
     "checkver": "github",
     "autoupdate": {
