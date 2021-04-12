@@ -14,6 +14,10 @@
         }
     },
     "innosetup": true,
+    "pre_install": [
+        "if (!(Test-Path \"$dir\\Sandboxie.ini\")) {",
+        "  New-Item -Path \"$dir\\Sandboxie.ini\" }"
+    ],
     "shortcuts": [
         [
             "SandMan.exe",
