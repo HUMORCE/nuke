@@ -16,7 +16,7 @@
     "innosetup": true,
     "pre_install": [
         "if (!(Test-Path \"$dir\\Sandboxie.ini\")) {",
-        "  New-Item -Path \"$dir\\Sandboxie.ini\" }"
+        "  New-Item -Path \"$dir\\Sandboxie.ini\" | Out-Null }"
     ],
     "shortcuts": [
         [
