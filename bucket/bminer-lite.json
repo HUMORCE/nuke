@@ -1,0 +1,30 @@
+{
+    "homepage": "https://www.bminer.me",
+    "description": "A highly optimized cryptocurrency miner that runs on modern AMD / NVIDIA GPUs",
+    "version": "16.4.6",
+    "license": "Public Domain",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.bminercontent.com/releases/bminer-lite-v16.4.6-d77cc9b-amd64.zip",
+            "hash": "da680facb63cbdfe7a7b4c48ae295e26b2cefa14f1b39f52fb18f98519974af5"
+        }
+    },
+    "extract_dir": "bminer-lite-v16.4.6-d77cc9b",
+    "bin": "bminer.exe",
+    "checkver": {
+        "url": "https://www.bminer.me/releases/",
+        "regex": ">bminer-lite-v(?<version>[\\d.]+)-(?<hash>.*)-amd64\\.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.bminercontent.com/releases/bminer-lite-v$version-$matchHash-amd64.zip",
+                "hash": {
+                    "url": "https://www.bminer.me/releases/",
+                    "regex": "$basename.*\\W.*\\W.*<small>$sha256"
+                }
+            }
+        },
+        "extract_dir": "bminer-lite-v$version-$matchHash"
+    }
+}
