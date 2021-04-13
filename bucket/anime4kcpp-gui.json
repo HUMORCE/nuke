@@ -17,13 +17,13 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/TianZerL/Anime4KCPP/releases/latest",
-        "regex": "Anime4KCPP_GUI-(?<version>\\d.+)-(?<cliversion>\\d.+)-Win64-msvc\\.7z"
+        "github": "https://github.com/TianZerL/Anime4KCPP",
+        "regex": "Anime4KCPP_GUI-(?<version>[\\d.]+)-(?<cli>[\\d.]+)-Win64-msvc\\.7z"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/TianZerL/Anime4KCPP/releases/download/v$matchCliversion/Anime4KCPP_GUI-$matchVersion-$matchCliversion-Win64-msvc.7z"
+                "url": "https://github.com/TianZerL/Anime4KCPP/releases/download/v$matchCli/Anime4KCPP_GUI-$version-$matchCli-Win64-msvc.7z"
             }
         }
     }
