@@ -1,0 +1,30 @@
+{
+    "homepage": "https://github.com/tobyxdd/hysteria",
+    "description": "A TCP relay & SOCKS5/HTTP proxy tool optimized for poor network environments",
+    "version": "0.5.5",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tobyxdd/hysteria/releases/download/v0.5.5/hysteria-windows-amd64.exe",
+            "hash": "781f3c19f432827008cdacc474af73878545a4edbc322b8375e84d87ea5374f9",
+            "pre_install": "Rename-Item \"$dir\\hysteria-windows-amd64.exe\" 'hysteria.exe'"
+        },
+        "32bit": {
+            "url": "https://github.com/tobyxdd/hysteria/releases/download/v0.5.5/hysteria-windows-386.exe",
+            "hash": "e0ce394947a9c9b395c31a38b4193244da65f2a258560af745b708ba03eead57",
+            "pre_install": "Rename-Item \"$dir\\hysteria-windows-386.exe\" 'hysteria.exe'"
+        }
+    },
+    "bin": "hysteria.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/tobyxdd/hysteria/releases/download/v$version/hysteria-windows-amd64.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/tobyxdd/hysteria/releases/download/v$version/hysteria-windows-386.exe"
+            }
+        }
+    }
+}
