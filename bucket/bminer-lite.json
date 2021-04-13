@@ -13,7 +13,7 @@
     "bin": "bminer.exe",
     "checkver": {
         "url": "https://www.bminer.me/releases/",
-        "regex": ">bminer-lite-v(?<version>[\\d.]+)-(?<hash>.*)-amd64\\.zip"
+        "regex": "releases/bminer-lite-v(?<version>[\\d.]+)-(?<hash>[a-fA-F0-9]{7})-amd64\\.zip"
     },
     "autoupdate": {
         "architecture": {
