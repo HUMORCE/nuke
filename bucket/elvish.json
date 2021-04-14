@@ -17,7 +17,7 @@
     "bin": "elvish.exe",
     "checkver": {
         "url": "https://elv.sh/get/",
-        "regex": "([\\d.]+)\\s\\(<a\\shref"
+        "regex": "windows-amd64/elvish-v([\\d.]+)\\.zip"
     },
     "autoupdate": {
         "architecture": {
