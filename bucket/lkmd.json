@@ -20,7 +20,7 @@
     "bin": "LKMD.exe",
     "checkver": {
         "url": "https://www.novirusthanks.org/products/live-kernel-memory-dump/",
-        "regex": "Version</th>\\s*<td>(\\d.+)</td>"
+        "regex": "Version</th>\\s*<td>([\\d.]+)<\/td>"
     },
     "autoupdate": {
         "url": "https://downloads.novirusthanks.org/files/LiveKernelMemoryDump.zip"
