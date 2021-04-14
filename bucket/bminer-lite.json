@@ -21,7 +21,7 @@
                 "url": "https://www.bminercontent.com/releases/bminer-lite-v$version-$matchHash-amd64.zip",
                 "hash": {
                     "url": "https://www.bminer.me/releases/",
-                    "regex": "$basename.*\\W.*\\W.*<small>$sha256"
+                    "regex": "$basename</a></td>\\W.*\\W.*<small>$sha256</small>"
                 }
             }
         },
