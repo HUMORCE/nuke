@@ -1,13 +1,13 @@
 {
     "homepage": "https://www.wechat.com",
     "description": "Free messaging and calling app",
-    "version": "3.2.1.127",
+    "version": "3.2.1.141",
     "license": {
         "identifier": "WECHAT – TERMS OF SERVICE",
         "url": "https://www.wechat.com/en/service_terms.html"
     },
     "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#dl.7z",
-    "hash": "ddc5e7ab62a91c3dad057660bde47b01999555a10208de410c1d817ee8f9da60",
+    "hash": "3f246e67bfa9529b5b4f186fd495ebc4dc9b0ccdd84651b04531395b2d5ff39e",
     "shortcuts": [
         [
             "WeChat.exe",
