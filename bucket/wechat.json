@@ -6,8 +6,8 @@
         "identifier": "WECHAT – TERMS OF SERVICE",
         "url": "https://www.wechat.com/en/service_terms.html"
     },
-    "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#dl.7z",
-    "hash": "3f246e67bfa9529b5b4f186fd495ebc4dc9b0ccdd84651b04531395b2d5ff39e",
+    "url": "https://dl.softmgr.qq.com/original/im/WeChatSetup_3.2.1.141.exe#dl.7z",
+    "hash": "76523562b1920d6eb6f63eb91ffa95843eb8fc55d66f2eba2f43184204208c76",
     "shortcuts": [
         [
             "WeChat.exe",
@@ -20,9 +20,6 @@
         "regex": "WeChatSetup_(\\d.+)\\.exe"
     },
     "autoupdate": {
-        "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#dl.7z",
-        "hash": {
-            "mode": "download"
-        }
+        "url": "https://dl.softmgr.qq.com/original/im/WeChatSetup_$version.exe#dl.7z"
     }
 }
