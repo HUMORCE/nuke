@@ -10,8 +10,10 @@
         }
     },
     "bin": [
-        "miner.exe",
-        "gminer"
+        [
+            "miner.exe",
+            "gminer"
+        ]
     ],
     "checkver": "github",
     "autoupdate": {
