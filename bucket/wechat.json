@@ -1,25 +1,17 @@
 {
     "homepage": "https://www.wechat.com",
     "description": "Free messaging and calling app",
-    "version": "3.2.1.151",
+    "version": "nightly",
     "license": {
         "identifier": "WECHAT – TERMS OF SERVICE",
         "url": "https://www.wechat.com/en/service_terms.html"
     },
-    "url": "https://dl.softmgr.qq.com/original/im/WeChatSetup_3.2.1.151.exe#dl.7z",
-    "hash": "d87dbbf74caa6bd279def8b89c99f18b49a0a3722d966b861fcaa512174020e2",
+    "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#dl.7z",
     "shortcuts": [
         [
             "WeChat.exe",
             "WeChat"
         ]
     ],
-    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R5\", \"$dir\\`$_15_\" -Force -Recurse",
-    "checkver": {
-        "url": "https://pc.qq.com/detail/8/detail_11488.html",
-        "regex": "WeChatSetup_(\\d.+)\\.exe"
-    },
-    "autoupdate": {
-        "url": "https://dl.softmgr.qq.com/original/im/WeChatSetup_$version.exe#dl.7z"
-    }
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R5\", \"$dir\\`$_15_\" -Force -Recurse"
 }
