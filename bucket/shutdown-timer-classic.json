@@ -1,0 +1,19 @@
+{
+    "homepage": "https://github.com/lukaslangrock/ShutdownTimerClassic",
+    "description": "Pick a time and let your computer shutdown, restart, hibernate, sleep or lock itself",
+    "version": "1.2.2",
+    "license": "MIT",
+    "url": "https://github.com/lukaslangrock/ShutdownTimerClassic/releases/download/v1.2.2/ShutdownTimerClassic_v1.2.2.zip",
+    "hash": "168367b5b67d98060065b55ebd8137f7e67241b157b33303b25169b221f61d1b",
+    "bin": "ShutdownTimerClassic.exe",
+    "shortcuts": [
+        [
+            "ShutdownTimerClassic.exe",
+            "Shutdown Timer"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/lukaslangrock/ShutdownTimerClassic/releases/download/v$version/ShutdownTimerClassic_v$version.zip"
+    }
+}
