@@ -12,7 +12,7 @@
     ],
     "hash": [
         "3a4a07fb33be1e88db90da83463e78193377227c39f62beb526b75908a6cb834",
-        "d41e228f5ae69ac0c596d05265395058024f7af4f277b2411def37231f887a14"
+        "87e89579cef9796cfe6b1bf3a901a5472f08cfb5be57ad66ab4dd167ba72fe62"
     ],
     "extract_dir": "InstallDir",
     "post_install": "yy-setup.ps1 $dir $version",
