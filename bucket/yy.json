@@ -8,7 +8,7 @@
     },
     "url": [
         "https://yydl.duowan.com/4/setup/YYSetup-8.69.0.3-zh-CN.exe#/dl.7z",
-        "https://raw.githubusercontent.com/HUMORCE/scoop-nuke/master/scripts/yy-setup.ps1"
+        "https://raw.githubusercontent.com/HUMORCE/scoop-nuke/master/scripts/yy/yy-setup.ps1"
     ],
     "hash": [
         "3a4a07fb33be1e88db90da83463e78193377227c39f62beb526b75908a6cb834",
