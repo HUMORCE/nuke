@@ -47,7 +47,7 @@ $data_replace =
 "$data_dir\yy\business\garbagecleaner",
 "$data_dir\yy\business\logingiftbag",
 # \yy\cache\
-"$data_dir\yy\cache\download",
+# "$data_dir\yy\cache\download",
 # \yy\openplatform\
 "$data_dir\yy\openplatform\aggame",
 # \yy\yycomstore\2052\
