@@ -1,10 +1,10 @@
 {
     "homepage": "https://dogehouse.tv",
     "description": "Taking voice conversations to the moon",
-    "version": "1.0.67",
+    "version": "1.0.68",
     "license": "MIT",
-    "url": "https://github.com/benawad/dogehouse/releases/download/v1.0.67/DogeHouse-Setup-1.0.67.exe#dl.7z",
-    "hash": "5a2532203806ee87f23c0b44b03ca528b4d7b6a035f92730529593757b874765",
+    "url": "https://github.com/benawad/dogehouse/releases/download/v1.0.68/DogeHouse-Setup-1.0.68.exe#dl.7z",
+    "hash": "b9e6b3d46e079741ff61a641d9f6015b09d2e97c517f450089716d4a7304bb0b",
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
