@@ -93,6 +93,7 @@ $data_replace =
 "$data_dir\yy\yycomstore\2052\com.yy.legalbiz",
 "$data_dir\yy\yycomstore\2052\com.yy.livemini",
 "$data_dir\yy\yycomstore\2052\com.yy.logingiftbag",
+"$data_dir\yy\yycomstore\2052\com.yy.media",
 "$data_dir\yy\yycomstore\2052\com.yy.mostoolassist",
 "$data_dir\yy\yycomstore\2052\com.yy.mostoolTeamfightTactics",
 "$data_dir\yy\yycomstore\2052\com.yy.officialnews",
@@ -107,7 +108,6 @@ $data_replace =
 "$data_dir\yy\yycomstore\2052\com.yy.yycocos",
 "$data_dir\yy\yycomstore\2052\com.yy.yypkshow",
 "$data_dir\yy\yycomstore\2052\com.yy.zhongtaisdk"
-
 
 function yy_replace {
     param (
