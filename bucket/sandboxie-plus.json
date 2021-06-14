@@ -1,16 +1,16 @@
 {
     "homepage": "https://github.com/sandboxie-plus/Sandboxie",
     "description": "A sandbox-based isolation software for 32- and 64-bit Windows NT-based operating systems",
-    "version": "0.8.0",
+    "version": "0.7.5",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/0.8.0/Sandboxie-Plus-x64-v0.8.0.exe",
-            "hash": "d6992f37db3cac575992a791405868b19cbbd9d7b6a05f9b48eedcc305947c9c"
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/0.7.5/Sandboxie-Plus-x64-v0.7.5.exe",
+            "hash": "6c173b581870a583df0dabf5ce692e8dc39166f730898e8fe79e4eb58483649e"
         },
         "32bit": {
-            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/0.8.0/Sandboxie-Plus-x86-v0.8.0.exe",
-            "hash": "ece1d6ec035735e334f2099c2e035eba5eacf9404ff98c3104ca444f24d5fd47"
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/0.7.5/Sandboxie-Plus-x86-v0.7.5.exe",
+            "hash": "fdec450535bda53a6c101b7ac07b46ae6316ce64b7e974750115f8125c192da1"
         }
     },
     "innosetup": true,
