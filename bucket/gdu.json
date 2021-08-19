@@ -1,12 +1,12 @@
 {
     "homepage": "https://github.com/dundee/gdu",
     "description": "Pretty fast disk usage analyzer",
-    "version": "5.5.0",
+    "version": "5.6.0",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/dundee/gdu/releases/download/v5.5.0/gdu_windows_amd64.exe.zip",
-            "hash": "6f1ef82b13ab92beb4a9d9f32644f724be9b1e7c527182840fa70be191e9b1cd",
+            "url": "https://github.com/dundee/gdu/releases/download/v5.6.0/gdu_windows_amd64.exe.zip",
+            "hash": "b9d2ea6d0518681b049504ad7d28a41e05895ed83230f9134551fe9e763bb175",
             "pre_install": "Rename-Item \"$dir\\gdu_windows_amd64.exe\" 'gdu.exe'"
         }
     },
