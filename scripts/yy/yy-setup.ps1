@@ -98,6 +98,7 @@ $data_replace =
 "$data_dir\yy\yycomstore\2052\com.yy.mostoolTeamfightTactics",
 "$data_dir\yy\yycomstore\2052\com.yy.officialnews",
 "$data_dir\yy\yycomstore\2052\com.yy.phonetreasure",
+"$data_dir\yy\yycomstore\2052\com.yy.processservice",
 "$data_dir\yy\yycomstore\2052\com.yy.template.gametaskcenter",
 "$data_dir\yy\yycomstore\2052\com.yy.videoondemand",
 "$data_dir\yy\yycomstore\2052\com.yy.videoservice",
