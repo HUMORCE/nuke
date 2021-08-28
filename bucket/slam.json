@@ -1,0 +1,20 @@
+{
+    "homepage": "http://slam.flankers.net",
+    "description": "Source Live Audio Mixer",
+    "version": "1.5.4",
+    "license": "MIT",
+    "url": "https://github.com/SilentSys/SLAM/releases/download/v1.5.4/SLAM_v1.5.4.zip",
+    "hash": "bd50edfc6285e3d323cb47d37220c05f4c5db2c2760a04797e8b03038e0bced8",
+    "shortcuts": [
+        [
+            "SLAM.exe",
+            "SLAM"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/SilentSys/SLAM"
+    },
+    "autoupdate": {
+        "url": "https://github.com/SilentSys/SLAM/releases/download/v$version/SLAM_v$version.zip"
+    }
+}
