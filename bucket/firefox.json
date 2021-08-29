@@ -20,6 +20,11 @@
             "firefox.exe",
             "Firefox",
             "-profile \"$dir\\profile\""
+        ],
+        [
+            "firefox.exe",
+            "Firefox Profile Manager",
+            "-P"
         ]
     ],
     "persist": [
