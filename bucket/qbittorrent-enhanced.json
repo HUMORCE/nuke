@@ -1,7 +1,7 @@
 {
-    "homepage": "https://github.com/c0re100/qBittorrent-Enhanced-Edition",
-    "description": "qBittorrent BitTorrent client with anti-leech enhancement",
     "version": "4.3.8.10",
+    "description": "qBittorrent BitTorrent client with anti-leech enhancement",
+    "homepage": "https://github.com/c0re100/qBittorrent-Enhanced-Edition",
     "license": {
         "identifier": "GPL-2.0-only",
         "url": "https://github.com/qbittorrent/qBittorrent/blob/master/COPYING"

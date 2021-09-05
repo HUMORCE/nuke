@@ -1,7 +1,7 @@
 {
-    "homepage": "http://sdcc.sourceforge.net",
-    "description": "Small Device C Compiler",
     "version": "4.1.0",
+    "description": "Small Device C Compiler",
+    "homepage": "http://sdcc.sourceforge.net",
     "license": "GPL-2.0-only|GPL-3.0-only",
     "architecture": {
         "64bit": {

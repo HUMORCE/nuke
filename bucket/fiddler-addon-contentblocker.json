@@ -1,7 +1,7 @@
 {
-    "homepage": "https://www.telerik.com/fiddler/add-ons",
-    "description": "Block traffic based on URL via IAutoTamper",
     "version": "nightly",
+    "description": "Block traffic based on URL via IAutoTamper",
+    "homepage": "https://www.telerik.com/fiddler/add-ons",
     "license": "MIT",
     "suggest": {
         "fiddler": "nuke/fiddler"

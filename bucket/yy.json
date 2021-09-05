@@ -1,7 +1,7 @@
 {
-    "homepage": "https://www.yy.com/yy8/",
-    "description": "YY voice with componentless",
     "version": "8.72.0.1",
+    "description": "YY voice with componentless",
+    "homepage": "https://www.yy.com/yy8/",
     "license": {
         "identifier": "EULA",
         "url": "https://zc.yy.com/license.html"

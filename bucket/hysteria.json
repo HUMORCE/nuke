@@ -1,7 +1,7 @@
 {
-    "homepage": "https://github.com/HyNetwork/hysteria",
-    "description": "A TCP relay & SOCKS5/HTTP proxy tool optimized for poor network environments",
     "version": "0.8.5",
+    "description": "A TCP relay & SOCKS5/HTTP proxy tool optimized for poor network environments",
+    "homepage": "https://github.com/HyNetwork/hysteria",
     "license": "MIT",
     "architecture": {
         "64bit": {

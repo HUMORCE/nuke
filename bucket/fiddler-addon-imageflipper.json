@@ -1,7 +1,7 @@
 {
-    "homepage": "https://www.telerik.com/fiddler/add-ons",
-    "description": "Automatically flip all downloaded images 180 degrees",
     "version": "nightly",
+    "description": "Automatically flip all downloaded images 180 degrees",
+    "homepage": "https://www.telerik.com/fiddler/add-ons",
     "license": "MIT",
     "suggest": {
         "fiddler": "nuke/fiddler"

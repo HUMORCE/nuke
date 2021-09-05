@@ -1,7 +1,7 @@
 {
-    "homepage": "https://github.com/TianZerL/Anime4KCPP",
-    "description": "A high performance anime upscaler (AviSynth+ plugin Only)",
     "version": "2.5.0",
+    "description": "A high performance anime upscaler (AviSynth+ plugin Only)",
+    "homepage": "https://github.com/TianZerL/Anime4KCPP",
     "license": "MIT",
     "architecture": {
         "64bit": {

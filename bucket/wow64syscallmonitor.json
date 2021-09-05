@@ -1,7 +1,7 @@
 {
-    "homepage": "https://www.novirusthanks.org/products/wow64-syscall-monitor/",
-    "description": "Spawn a process and monitor all system calls made by the process",
     "version": "1.0",
+    "description": "Spawn a process and monitor all system calls made by the process",
+    "homepage": "https://www.novirusthanks.org/products/wow64-syscall-monitor/",
     "license": "Freeware",
     "architecture": {
         "64bit": {
@@ -16,10 +16,7 @@
             "WOW64 SysCall Monitor"
         ]
     ],
-    "checkver": {
-        "url": "https://www.novirusthanks.org/products/wow64-syscall-monitor/",
-        "regex": "Version</th>\\s*<td>([\\d.]+)<\/td>"
-    },
+    "checkver": "Version</th>\\s*<td>([\\d.]+)</td>",
     "autoupdate": {
         "architecture": {
             "64bit": {

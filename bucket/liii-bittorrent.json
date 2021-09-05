@@ -1,7 +1,7 @@
 {
-    "homepage": "https://codecpack.co/download/LIII-BitTorrent-Client.html",
-    "description": "A open-source file sharing utility capable of downloading torrents with minimal impact on the system's resources",
     "version": "0.1.1.11",
+    "description": "A open-source file sharing utility capable of downloading torrents with minimal impact on the system's resources",
+    "homepage": "https://codecpack.co/download/LIII-BitTorrent-Client.html",
     "license": "MIT",
     "architecture": {
         "64bit": {
@@ -21,9 +21,7 @@
             "LIII BitTorrent Client"
         ]
     ],
-    "checkver": {
-        "regex": "Latest\\sversion:\\s([\\d.]+)"
-    },
+    "checkver": "Latest\\sversion:\\s([\\d.]+)",
     "autoupdate": {
         "architecture": {
             "64bit": {

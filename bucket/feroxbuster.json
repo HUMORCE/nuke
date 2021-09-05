@@ -1,7 +1,7 @@
 {
-    "homepage": "https://github.com/epi052/feroxbuster",
-    "description": "A fast, simple, recursive content discovery tool written in Rust",
     "version": "2.3.3",
+    "description": "A fast, simple, recursive content discovery tool written in Rust",
+    "homepage": "https://github.com/epi052/feroxbuster",
     "license": "MIT",
     "architecture": {
         "64bit": {

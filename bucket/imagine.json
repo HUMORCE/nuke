@@ -1,7 +1,7 @@
 {
-    "homepage": "https://github.com/meowtec/Imagine",
-    "description": "compression of PNG and JPEG, with a modern and friendly UI",
     "version": "0.6.1",
+    "description": "compression of PNG and JPEG, with a modern and friendly UI",
+    "homepage": "https://github.com/meowtec/Imagine",
     "license": "MIT",
     "architecture": {
         "64bit": {

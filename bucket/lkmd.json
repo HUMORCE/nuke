@@ -1,7 +1,7 @@
 {
-    "homepage": "https://www.novirusthanks.org/products/live-kernel-memory-dump/",
-    "description": "Dump \"live\" kernel memory without having to force the system down",
     "version": "1.0",
+    "description": "Dump \"live\" kernel memory without having to force the system down",
+    "homepage": "https://www.novirusthanks.org/products/live-kernel-memory-dump/",
     "license": "Freeware",
     "url": "https://downloads.novirusthanks.org/files/LiveKernelMemoryDump.zip",
     "hash": "28f480ed3586f0ce4990935011c1bc8944d6eec2d6793397d1fed5a1387da377",
@@ -18,10 +18,7 @@
         "script": "Get-ChildItem \"$dir\\LKMD??.exe\" | Remove-Item"
     },
     "bin": "LKMD.exe",
-    "checkver": {
-        "url": "https://www.novirusthanks.org/products/live-kernel-memory-dump/",
-        "regex": "Version</th>\\s*<td>([\\d.]+)<\/td>"
-    },
+    "checkver": "Version</th>\\s*<td>([\\d.]+)</td>",
     "autoupdate": {
         "url": "https://downloads.novirusthanks.org/files/LiveKernelMemoryDump.zip"
     }

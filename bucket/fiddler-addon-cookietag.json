@@ -1,7 +1,7 @@
 {
-    "homepage": "https://www.telerik.com/fiddler/add-ons",
-    "description": "Flags responses that set cookies and color codes based on P3P headers",
     "version": "nightly",
+    "description": "Flags responses that set cookies and color codes based on P3P headers",
+    "homepage": "https://www.telerik.com/fiddler/add-ons",
     "license": "MIT",
     "suggest": {
         "fiddler": "nuke/fiddler"

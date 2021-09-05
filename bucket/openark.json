@@ -1,7 +1,7 @@
 {
-    "homepage": "https://openark.blackint3.com",
-    "description": "Open source anti-rookit(ARK) tool for Windows",
     "version": "1.1.0",
+    "description": "Open source anti-rookit(ARK) tool for Windows",
+    "homepage": "https://openark.blackint3.com",
     "license": "LGPL-2.1-only",
     "architecture": {
         "64bit": {

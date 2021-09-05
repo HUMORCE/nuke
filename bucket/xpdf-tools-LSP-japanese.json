@@ -1,7 +1,7 @@
 {
-    "homepage": "http://www.xpdfreader.com/",
-    "description": "Japanese language support packages for xpdf-tools",
     "version": "2020-Dec-22",
+    "description": "Japanese language support packages for xpdf-tools",
+    "homepage": "http://www.xpdfreader.com/",
     "license": {
         "identifier": "GPL-2.0-only|GPL-3.0-only",
         "url": "https://www.xpdfreader.com/opensource.html"

@@ -1,7 +1,7 @@
 {
-    "homepage": "https://github.com/lulianqi/FreeHttp",
-    "description": "Fiddler addon for modific http requset and response",
     "version": "2.2.1",
+    "description": "Fiddler addon for modific http requset and response",
+    "homepage": "https://github.com/lulianqi/FreeHttp",
     "license": "MIT",
     "suggest": {
         "fiddler": "nuke/fiddler"

@@ -1,7 +1,7 @@
 {
-    "homepage": "https://github.com/shunf4/proxychains-windows",
-    "description": "Windows and Cygwin port of proxychains, based on MinHook and DLL Injection",
     "version": "0.6.8",
+    "description": "Windows and Cygwin port of proxychains, based on MinHook and DLL Injection",
+    "homepage": "https://github.com/shunf4/proxychains-windows",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {

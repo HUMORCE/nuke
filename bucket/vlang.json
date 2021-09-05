@@ -1,7 +1,7 @@
 {
-    "homepage": "https://vlang.io",
-    "description": "Simple, fast, safe, compiled. For developing maintainable software",
     "version": "0.2.4",
+    "description": "Simple, fast, safe, compiled. For developing maintainable software",
+    "homepage": "https://vlang.io",
     "license": "MIT",
     "url": "https://github.com/vlang/v/releases/download/0.2.4/v_windows.zip",
     "hash": "30fd4a6773f9bf55f0ef3a0aefa52df77ce6a3035836c283bb1bf5d8e6412499",

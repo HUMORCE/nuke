@@ -1,7 +1,8 @@
 {
-    "homepage": "http://www.rohitab.com/apimonitor",
-    "description": "Spy on API Calls and COM Interfaces",
+    "##": "TODO: checkver/autoupdate",
     "version": "2.0-r13",
+    "description": "Spy on API Calls and COM Interfaces",
+    "homepage": "http://www.rohitab.com/apimonitor",
     "license": "Freeware",
     "url": "http://www.rohitab.com/download/api-monitor-v2r13-x86-x64.zip",
     "hash": "D045E45F523A6C0C7A2A8E06831F4B2D705FB84F4995791B5A70B28424A49D2B",
@@ -15,6 +16,5 @@
             "apimonitor-x86.exe",
             "API Monitor (x86)"
         ]
-    ],
-    "##": "TODO: checkver/autoupdate"
+    ]
 }

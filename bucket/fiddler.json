@@ -19,9 +19,7 @@
             "Fiddler"
         ]
     ],
-    "persist": [
-        "persist"
-    ],
+    "persist": "persist",
     "checkver": {
         "url": "https://www.fiddler2.com/UpdateCheck.aspx?isBeta=False",
         "useragent": "Fiddler/$version",

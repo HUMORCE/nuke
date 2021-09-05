@@ -1,7 +1,7 @@
 {
-    "homepage": "https://github.com/dundee/gdu",
-    "description": "Pretty fast disk usage analyzer",
     "version": "5.6.2",
+    "description": "Pretty fast disk usage analyzer",
+    "homepage": "https://github.com/dundee/gdu",
     "license": "MIT",
     "architecture": {
         "64bit": {

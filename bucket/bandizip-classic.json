@@ -1,7 +1,7 @@
 {
-    "homepage": "https://www.bandisoft.com/bandizip/old/6/",
-    "description": "a powerful archiver which provides an ultrafast processing speed and convenient features",
     "version": "6.29",
+    "description": "a powerful archiver which provides an ultrafast processing speed and convenient features",
+    "homepage": "https://www.bandisoft.com/bandizip/old/6/",
     "license": {
         "identifier": "Freeware",
         "url": "https://en.bandisoft.com/bandizip/eula/"

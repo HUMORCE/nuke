@@ -1,7 +1,7 @@
 {
-    "homepage": "https://github.com/bloc97/Anime4K",
-    "description": "A high-quality real time upscaler for anime video",
     "version": "3.1",
+    "description": "A high-quality real time upscaler for anime video",
+    "homepage": "https://github.com/bloc97/Anime4K",
     "license": "MIT",
     "url": "https://github.com/bloc97/Anime4K/releases/download/3.1/Anime4K_v3.1.zip",
     "hash": "140af17cf9671f940d5d5fe64d31dde638d8cd2adb4b66c1f9a459ba968e3cb8",
