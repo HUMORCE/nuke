@@ -1,16 +1,16 @@
 {
-    "version": "2021-09-12",
+    "version": "2021-09-13",
     "description": "A Flash Player emulator written in Rust",
     "homepage": "https://ruffle.rs",
     "license": "MIT|Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2021-09-12/ruffle-nightly-2021_09_12-windows-x86_64.zip",
-            "hash": "3cc4c161538a22fc67bc759879c3235f4acdcd4381811d77585bf16b37f9ff5f"
+            "url": "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2021-09-13/ruffle-nightly-2021_09_13-windows-x86_64.zip",
+            "hash": "1dfefc3332e68b4b8f131a6eba52d24564c8d233a04fc9c089f7771ad1ee1c47"
         },
         "32bit": {
-            "url": "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2021-09-12/ruffle-nightly-2021_09_12-windows-x86_32.zip",
-            "hash": "bbfff51db8621d7bf97e29247dcf9eb6271511fcac29e4bc018a37eae10d0397"
+            "url": "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2021-09-13/ruffle-nightly-2021_09_13-windows-x86_32.zip",
+            "hash": "2ac6743691e9c7b70d3ac090ba0019fb31db2cb5a797a8137cdae568ba9565f1"
         }
     },
     "bin": "ruffle.exe",
