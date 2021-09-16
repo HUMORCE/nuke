@@ -7,7 +7,7 @@
         "url": "https://zc.yy.com/license.html"
     },
     "url": [
-        "https://yydl.duowan.com/4/setup/YYSetup-9.0.0.2-zh-CN.exe#/dl.7z",
+        "https://yydl.yy.com/4/setup/YYSetup-9.0.0.2-zh-CN.exe#/dl.7z",
         "https://raw.githubusercontent.com/HUMORCE/scoop-nuke/master/scripts/yy/yy-setup.ps1"
     ],
     "hash": [
@@ -28,6 +28,6 @@
         "regex": "YYSetup-([\\d.]+)-zh-CN.exe"
     },
     "autoupdate": {
-        "url": "https://yydl.duowan.com/4/setup/YYSetup-$version-zh-CN.exe#/dl.7z"
+        "url": "https://yydl.yy.com/4/setup/YYSetup-$version-zh-CN.exe#/dl.7z"
     }
 }
