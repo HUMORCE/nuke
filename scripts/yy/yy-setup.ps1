@@ -46,6 +46,6 @@ foreach ($i in $components) {
 if (Test-Path $datas) {
     $t = Get-ChildItem -Path $datas | Where-Object { $_.Name -ne "mainframe" }
     if ($t) {
-        Remove-Item $t -Force -Recurse
+        Remove-Item $t.FullName -Force -Recurse
     }
 }
