@@ -1,12 +1,12 @@
 {
-    "version": "20210923-12687",
+    "version": "20210924-12691",
     "description": "Small Device C Compiler (x86_64-w64-mingw32)",
     "homepage": "http://sdcc.sourceforge.net",
     "license": "GPL-2.0-only|GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://sourceforge.net/projects/sdcc/files/snapshot_builds/x86_64-w64-mingw32-setup/sdcc-20210923-12687-x64-setup.exe#dl.7z",
-            "hash": "sha1:1cf326bbceb63e2d95ca68038d912cf50e54e2ed"
+            "url": "https://sourceforge.net/projects/sdcc/files/snapshot_builds/x86_64-w64-mingw32-setup/sdcc-20210924-12691-x64-setup.exe#dl.7z",
+            "hash": "sha1:efbba8c675b2104e9690fcf1421b4db18f703c5f"
         }
     },
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall*\" -Force -Recurse",
