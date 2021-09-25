@@ -1,10 +1,10 @@
 {
-    "version": "20210924-12691",
+    "version": "20210925-12691",
     "description": "Small Device C Compiler (i586-mingw32msvc)",
     "homepage": "http://sdcc.sourceforge.net",
     "license": "GPL-2.0-only|GPL-3.0-only",
-    "url": "https://sourceforge.net/projects/sdcc/files/snapshot_builds/i586-mingw32msvc-setup/sdcc-20210924-12691-setup.exe#dl.7z",
-    "hash": "sha1:6bb32782a4f36ee876f62aeafc284521038cbf8f",
+    "url": "https://sourceforge.net/projects/sdcc/files/snapshot_builds/i586-mingw32msvc-setup/sdcc-20210925-12691-setup.exe#dl.7z",
+    "hash": "sha1:4b5ddcf8f3dc802852533c7c202bba818c71c0c4",
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall*\" -Force -Recurse",
     "bin": "bin\\sdcc.exe",
     "checkver": {
