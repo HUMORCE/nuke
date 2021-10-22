@@ -1,10 +1,10 @@
 {
-    "version": "1.7.2.4",
+    "version": "1.7.2.6",
     "description": "Free and open-source software that allows users to set animated and interactive desktop wallpapers",
     "homepage": "https://rocksdanister.github.io/lively/",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/rocksdanister/lively/releases/download/v1.7.2.4/lively_setup_x86_full_v1724.exe",
-    "hash": "9347f0c36df25b9852ee65427e9de2a7644dbda2adbc23bde6aa7de026f5909f",
+    "url": "https://github.com/rocksdanister/lively/releases/download/v1.7.2.6/lively_setup_x86_full_v1726.exe",
+    "hash": "8bf189dc5a0cdab5db905cbff4907d796d416f50df82eaedbc7e2c20e1a38cc2",
     "shortcuts": [
         [
             "livelywpf.exe",
