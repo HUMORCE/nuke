@@ -1,10 +1,10 @@
 {
-    "version": "2021.42.1",
+    "version": "2021.43",
     "description": "Simple, fast, safe, compiled. For developing maintainable software",
     "homepage": "https://vlang.io",
     "license": "MIT",
-    "url": "https://github.com/vlang/v/releases/download/weekly.2021.42.1/v_windows.zip",
-    "hash": "d092349765fd11e2609c773585407135e070cb7c3cfe2d572fb53b6d1642234c",
+    "url": "https://github.com/vlang/v/releases/download/weekly.2021.43/v_windows.zip",
+    "hash": "8ce39e864ae6a8be064aa03227fd81c379b7bec2f70b3b2a2682faa290f58c51",
     "extract_dir": "v",
     "bin": "v.exe",
     "checkver": {
