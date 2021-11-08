@@ -3,7 +3,7 @@
 ## Add the bucket to Scoop
 
 ```pwsh
-scoop bucket add nuke https://github.com/HUMORCE/scoop-nuke
+scoop bucket add nuke https://github.com/HUMORCE/nuke
 ```
 
 ## Install apps from Nuke bucket
