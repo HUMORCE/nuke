@@ -1,17 +1,17 @@
 {
-    "version": "0.8.5",
+    "version": "0.8.6",
     "description": "A TCP relay & SOCKS5/HTTP proxy tool optimized for poor network environments",
     "homepage": "https://github.com/HyNetwork/hysteria",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/HyNetwork/hysteria/releases/download/v0.8.5/hysteria-windows-6.0-amd64.exe",
-            "hash": "0bc319ef5f3543d39d7ecdcb57a2b077ff7898c0a6925f918bfbe0b50abc73af",
+            "url": "https://github.com/HyNetwork/hysteria/releases/download/v0.8.6/hysteria-windows-6.0-amd64.exe",
+            "hash": "44849924c7d930e8b580491e72ee755ec203fe3d8df5c164abb4c8c1a0e393aa",
             "pre_install": "Rename-Item \"$dir\\hysteria-windows-6.0-amd64.exe\" 'hysteria.exe'"
         },
         "32bit": {
-            "url": "https://github.com/HyNetwork/hysteria/releases/download/v0.8.5/hysteria-windows-6.0-386.exe",
-            "hash": "643a765d6be1e16858be592676cc8f30dbcaff4fc6ab017ddcb8c59d25cabe3e",
+            "url": "https://github.com/HyNetwork/hysteria/releases/download/v0.8.6/hysteria-windows-6.0-386.exe",
+            "hash": "1e0d7ea5b4bffc49b8ff7753340acdbb745d739bd7fd6931b8e1aad6d5964e54",
             "pre_install": "Rename-Item \"$dir\\hysteria-windows-6.0-386.exe\" 'hysteria.exe'"
         }
     },
