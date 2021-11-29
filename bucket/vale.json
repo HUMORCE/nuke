@@ -1,12 +1,12 @@
 {
-    "version": "2.12.1",
+    "version": "2.13.0",
     "description": "A syntax-aware linter for prose built with speed and extensibility in mind",
     "homepage": "https://github.com/errata-ai/vale",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/errata-ai/vale/releases/download/v2.12.1/vale_2.12.1_Windows_64-bit.zip",
-            "hash": "6baab44e8bc4262a2e165e1690647c8826024d693af55ce7405986bc99abe844"
+            "url": "https://github.com/errata-ai/vale/releases/download/v2.13.0/vale_2.13.0_Windows_64-bit.zip",
+            "hash": "43c031b7661579f3c8b4b1ca7eef9edbbab4530bc082091209c613746d735293"
         }
     },
     "bin": "vale.exe",
