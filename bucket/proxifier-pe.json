@@ -15,6 +15,10 @@
             "Proxifier"
         ]
     ],
+    "persist": [
+        "Profiles",
+        "Settings.ini"
+    ],
     "checkver": {
         "url": "https://www.proxifier.com/changelog/",
         "regex": "changelog-version\">Version ([\\d].+)<\\/div>"
