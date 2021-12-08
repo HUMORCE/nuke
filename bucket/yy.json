@@ -1,5 +1,5 @@
 {
-    "version": "9.0.0.2",
+    "version": "9.1.0.1",
     "description": "YY voice with componentless",
     "homepage": "https://www.yy.com/yy8/",
     "license": {
@@ -7,11 +7,11 @@
         "url": "https://zc.yy.com/license.html"
     },
     "url": [
-        "https://yydl.yy.com/4/setup/YYSetup-9.0.0.2-zh-CN.exe#/dl.7z",
+        "https://yydl.yy.com/4/setup/YYSetup-9.1.0.1-zh-CN.exe#/dl.7z",
         "https://raw.githubusercontent.com/HUMORCE/scoop-nuke/master/scripts/yy/yy-setup.ps1"
     ],
     "hash": [
-        "4e335cd361e928933efd2dfcaf8ae5f303a912fd03a192547a3bb17a0cf6f8d2",
+        "e54a64e1cdabe012414393d7cadcfbc4637d806e24f9da770d7f7b83e33a1e61",
         "3593f60df11268927f4c31a0da6e82789e63b35f58b242e769a3148598de2490"
     ],
     "extract_dir": "InstallDir",
