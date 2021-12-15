@@ -4,12 +4,13 @@ on:
 name: Issues
 jobs:
   issueHandler:
-    name: IssueHandler
+    name: Issue Handler
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@main
-    - name: IssueHandler
+    - name: Issue Handler
       uses: ScoopInstaller/Scoop-GithubActions@main
       if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
       env:
+        USER_EMAIL: humorce@outlook.com
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
