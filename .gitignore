@@ -1,3 +1,5 @@
 /checkver*
 /.cache/
 /.vagrant/
+/bucket-wip/
+/bucket/wip_*
