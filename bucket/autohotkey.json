@@ -1,0 +1,37 @@
+{
+    "version": "1.1.33.10",
+    "description": "The ultimate automation scripting language for Windows.",
+    "homepage": "https://www.autohotkey.com/",
+    "license": "GPL-2.0-or-later",
+    "url": "https://www.autohotkey.com/download/ahk.zip",
+    "hash": "d25581597badcc5a5c0ffec68fcaf5dad6de18d14417aa39ec8ff4e938fca159",
+    "architecture": {
+        "64bit": {
+            "bin": [
+                "autohotkeyu64.exe",
+                [
+                    "autohotkeyu64.exe",
+                    "autohotkey"
+                ],
+                "compiler\\ahk2exe.exe"
+            ]
+        },
+        "32bit": {
+            "bin": [
+                "autohotkeyu32.exe",
+                [
+                    "autohotkeyu32.exe",
+                    "autohotkey"
+                ],
+                "compiler\\ahk2exe.exe"
+            ]
+        }
+    },
+    "checkver": {
+        "url": "https://www.autohotkey.com/download/",
+        "regex": "<!--update-->v([\\d].+) - "
+    },
+    "autoupdate": {
+        "url": "https://www.autohotkey.com/download/ahk.zip"
+    }
+}
