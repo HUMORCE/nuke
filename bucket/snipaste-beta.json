@@ -8,11 +8,11 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://bitbucket.org/liule/snipaste/downloads/Snipaste-2.7.1-x64.zip",
+            "url": "https://bitbucket.org/liule/snipaste/downloads/Snipaste-2.7.1-Beta-x64.zip",
             "hash": "sha1:d3c7388abd55440c2eadb0e2f29911b03773abf7"
         },
         "32bit": {
-            "url": "https://bitbucket.org/liule/snipaste/downloads/Snipaste-2.7.1-x86.zip",
+            "url": "https://bitbucket.org/liule/snipaste/downloads/Snipaste-2.7.1-Beta-x86.zip",
             "hash": "sha1:e3f16099a9a6ec9dfc59203af13461995ce8c53c"
         }
     },
@@ -34,14 +34,14 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://bitbucket.org/liule/snipaste/downloads/Snipaste-$version-x64.zip",
+                "url": "https://bitbucket.org/liule/snipaste/downloads/Snipaste-$version-Beta-x64.zip",
                 "hash": {
                     "url": "https://dl.snipaste.com/sha-1.txt",
                     "regex": "$sha1.*?x64.zip"
                 }
             },
             "32bit": {
-                "url": "https://bitbucket.org/liule/snipaste/downloads/Snipaste-$version-x86.zip",
+                "url": "https://bitbucket.org/liule/snipaste/downloads/Snipaste-$version-Beta-x86.zip",
                 "hash": {
                     "url": "https://dl.snipaste.com/sha-1.txt",
                     "regex": "$sha1.*?x86.zip"
