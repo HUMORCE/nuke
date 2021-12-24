@@ -22,5 +22,8 @@
     "checkver": {
         "url": "https://www.proxifier.com/changelog/",
         "regex": "changelog-version\">Version ([\\d].+)<\\/div>"
+    },
+    "autoupdate": {
+        "url": "https://www.proxifier.com/download/ProxifierPE.zip"
     }
 }
