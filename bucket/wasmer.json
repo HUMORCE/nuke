@@ -3,25 +3,43 @@
     "description": "The leading WebAssembly Runtime supporting WASI and Emscripten",
     "homepage": "https://wasmer.io",
     "license": "MIT",
-    "url": "https://github.com/wasmerio/wasmer/releases/download/2.1.1/wasmer-windows.exe",
-    "hash": "f48184afbe750d6d45cde754d8ea20a3c2771270debcb76e623aa714b032b543",
-    "persist": [
-        "global",
-        "cache"
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/wasmerio/wasmer/releases/download/2.1.1/wasmer-windows.exe",
+            "hash": "f48184afbe750d6d45cde754d8ea20a3c2771270debcb76e623aa714b032b543"
+        }
+    },
+    "post_install": [
+        "if (Test-Path \"$persist_dir\\wapm.toml\") {",
+        "Get-ChildItem $persist_dir\\wapm.toml | Copy-Item -Destination \"$dir\" -ErrorAction SilentlyContinue -Force }"
     ],
-    "env_add_path": [
-        "globals\\wapm_packages\\.bin",
-        "bin"
-    ],
+    "uninstaller": {
+        "script": [
+            "if (Test-Path \"$dir\\wapm.toml\") {",
+            "Get-ChildItem $dir\\wapm.toml | Copy-Item -Destination \"$persist_dir\" -ErrorAction SilentlyContinue -Force }"
+        ]
+    },
     "env_set": {
         "WASMER_DIR": "$dir",
         "WASMER_CACHE_DIR": "$dir\\cache"
     },
+    "bin": [
+        "bin\\wax.cmd",
+        "bin\\wapm.exe",
+        "bin\\wasmer.exe"
+    ],
+    "persist": [
+        "globals"
+    ],
     "innosetup": true,
     "checkver": {
         "github": "https://github.com/wasmerio/wasmer"
     },
     "autoupdate": {
-        "url": "https://github.com/wasmerio/wasmer/releases/download/$version/wasmer-windows.exe"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/wasmerio/wasmer/releases/download/$version/wasmer-windows.exe"
+            }
+        }
     }
 }
