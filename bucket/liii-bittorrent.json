@@ -21,7 +21,9 @@
             "LIII BitTorrent Client"
         ]
     ],
-    "checkver": "Latest\\sversion:\\s([\\d.]+)",
+    "checkver": {
+        "github": "https://github.com/aliakseis/LIII"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
