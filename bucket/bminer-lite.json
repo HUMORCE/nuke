@@ -1,7 +1,7 @@
 {
-    "homepage": "https://www.bminer.me",
-    "description": "A highly optimized cryptocurrency miner that runs on modern AMD / NVIDIA GPUs",
     "version": "16.4.9",
+    "description": "A highly optimized cryptocurrency miner that runs on modern AMD / NVIDIA GPUs",
+    "homepage": "https://www.bminer.me",
     "license": "Public Domain",
     "architecture": {
         "64bit": {
