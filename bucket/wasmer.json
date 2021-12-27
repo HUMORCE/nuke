@@ -28,9 +28,7 @@
         "bin\\wapm.exe",
         "bin\\wasmer.exe"
     ],
-    "persist": [
-        "globals"
-    ],
+    "persist": "globals",
     "innosetup": true,
     "checkver": {
         "github": "https://github.com/wasmerio/wasmer"
