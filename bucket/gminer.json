@@ -1,7 +1,7 @@
 {
-    "homepage": "https://github.com/develsoftware/GMinerRelease",
-    "description": "Ethash, ProgPoW, Equihash, CuckooCycle GPU Miner",
     "version": "2.74",
+    "description": "Ethash, ProgPoW, Equihash, CuckooCycle GPU Miner",
+    "homepage": "https://github.com/develsoftware/GMinerRelease",
     "license": "Public Domain",
     "architecture": {
         "64bit": {
