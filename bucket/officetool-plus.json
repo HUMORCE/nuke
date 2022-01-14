@@ -1,10 +1,10 @@
 {
-    "version": "8.3.0.1",
+    "version": "8.3.0.2",
     "description": "Office Tool Plus based on ODT, highly integrated with a variety of useful tools to help users deploy Office",
     "homepage": "https://otp.landian.vip",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/YerongAI/Office-Tool/releases/download/v8.3.0.1/Office_Tool_v8.3.0.1.zip",
-    "hash": "b6498cbb1bd84823c002597f11f88b6c8499e74a85941c7b80f86275f2c5f946",
+    "url": "https://github.com/YerongAI/Office-Tool/releases/download/v8.3.0.1/Office_Tool_v8.3.0.2.zip",
+    "hash": "da4fa3120344ffdb06dc42dc4ff577f48f3e53e0568ff72e6aaf59826fe46295",
     "shortcuts": [
         [
             "Office Tool Plus.exe",
