@@ -12,6 +12,7 @@
         "Enable 'Hyper-V' or install 'Oracle VM VirtualBox' manually.",
         "Official documentation: https://multipass.run/docs"
     ],
+    "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninst*\" -Force -Recurse",
     "architecture": {
         "64bit": {
             "url": "https://github.com/canonical/multipass/releases/download/v1.8.0/multipass-1.8.0+win-win64.exe#/dl.7z",
