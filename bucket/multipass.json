@@ -12,7 +12,7 @@
         " - Enable 'Hyper-V' or install 'Oracle VM VirtualBox' manually.",
         "Daemon Management:",
         " - See 'multipassd --help', e.g.: 'multipassd -V info'",
-        " - Scripts via manifest: 'multipassd-start|stop'",
+        " - Scripts via manifest: 'multipassd-start|stop|status|restart'",
         "",
         "Official documentation: https://multipass.run/docs"
     ],
@@ -25,13 +25,17 @@
     "pre_install": [
         "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninst*\" -Force -Recurse",
         "\"Start-Process multipassd -ArgumentList '-V debug' -UseNewEnvironment -WindowStyle Hidden\" | Out-File \"$dir\\multipassd-start.ps1\"",
-        "\"Stop-Process -Name 'multipassd' -ErrorAction SilentlyContinue\" | Out-File \"$dir\\multipassd-stop.ps1\""
+        "\"Stop-Process -Name 'multipassd' -ErrorAction SilentlyContinue\" | Out-File \"$dir\\multipassd-stop.ps1\"",
+        "\"Get-Process -Name 'multipassd' -ErrorAction SilentlyContinue\" | Out-File \"$dir\\multipassd-status.ps1\"",
+        "\"multipassd-stop; multipassd-start\" | Out-File \"$dir\\multipassd-restart.ps1\""
     ],
     "bin": [
         "bin\\multipass.exe",
         "bin\\multipassd.exe",
         "multipassd-start.ps1",
-        "multipassd-stop.ps1"
+        "multipassd-stop.ps1",
+        "multipassd-status.ps1",
+        "multipassd-restart.ps1"
     ],
     "shortcuts": [
         [
