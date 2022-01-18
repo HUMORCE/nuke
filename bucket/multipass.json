@@ -44,8 +44,7 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/canonical/multipass",
-        "regex": "multipass-([\\d.]+)\\+win-win64"
+        "github": "https://github.com/canonical/multipass"
     },
     "autoupdate": {
         "architecture": {
