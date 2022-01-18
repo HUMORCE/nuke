@@ -1,6 +1,6 @@
 {
     "version": "1.0.10",
-    "description": "Desktop implementation of Steam's mobile authenticator app",
+    "description": "Desktop implementation of Steam's mobile authenticator app.",
     "homepage": "https://github.com/Jessecar96/SteamDesktopAuthenticator",
     "license": "MIT",
     "notes": [

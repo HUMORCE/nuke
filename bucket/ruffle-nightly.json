@@ -1,6 +1,6 @@
 {
     "version": "2022-01-17",
-    "description": "A Flash Player emulator written in Rust",
+    "description": "A Flash Player emulator written in Rust.",
     "homepage": "https://ruffle.rs",
     "license": "MIT|Apache-2.0",
     "architecture": {

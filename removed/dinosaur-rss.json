@@ -1,6 +1,6 @@
 {
     "version": "0.3.6",
-    "description": "A simple, efficient, open source RSS reader service",
+    "description": "A simple, efficient, open source RSS reader service.",
     "homepage": "https://dinorss.org",
     "license": "MIT",
     "architecture": {

@@ -1,6 +1,6 @@
 {
     "version": "2021.12.27",
-    "description": "A youtube-dl fork with additional features and fixes",
+    "description": "A youtube-dl fork with additional features and fixes.",
     "homepage": "https://github.com/yt-dlp/yt-dlp",
     "license": "Unlicense",
     "architecture": {
