@@ -7,21 +7,31 @@
         "url": "https://github.com/canonical/multipass/blob/main/COPYING.GPL.txt"
     },
     "notes": [
-        "Run daemon: 'multipassd -V debug'",
-        "Select hypervisor: 'multipass set local.driver=hyperv(default)|virtualbox'",
-        "Enable 'Hyper-V' or install 'Oracle VM VirtualBox' manually.",
+        "Select hypervisor:",
+        " - 'multipass set local.driver=hyperv(default)|virtualbox'",
+        " - Enable 'Hyper-V' or install 'Oracle VM VirtualBox' manually.",
+        "Daemon Management:",
+        " - See 'multipassd --help', e.g.: 'multipassd -V info'",
+        " - Scripts via manifest: 'multipassd-start|stop'",
+        "",
         "Official documentation: https://multipass.run/docs"
     ],
-    "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninst*\" -Force -Recurse",
     "architecture": {
         "64bit": {
             "url": "https://github.com/canonical/multipass/releases/download/v1.8.0/multipass-1.8.0+win-win64.exe#/dl.7z",
             "hash": "60b01ed14d63c9759680abc5d706a53cca9875c9e2ff9daab635481fad90a879"
         }
     },
+    "pre_install": [
+        "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninst*\" -Force -Recurse",
+        "\"Start-Process multipassd -ArgumentList '-V debug' -UseNewEnvironment -WindowStyle Hidden\" | Out-File \"$dir\\multipassd-start.ps1\"",
+        "\"Stop-Process -Name 'multipassd' -ErrorAction SilentlyContinue\" | Out-File \"$dir\\multipassd-stop.ps1\""
+    ],
     "bin": [
         "bin\\multipass.exe",
-        "bin\\multipassd.exe"
+        "bin\\multipassd.exe",
+        "multipassd-start.ps1",
+        "multipassd-stop.ps1"
     ],
     "shortcuts": [
         [
