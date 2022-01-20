@@ -13,7 +13,7 @@
             "hash": "86c80d994e3df131bd9410869ed9d23b438d08b8d6b6684f01b5aba4a92b0269"
         }
     },
-    "pre_install": "Get-ChildItem \"$dir\\clash-windows-*.exe\" | Rename-Item 'clash-premium.exe'",
+    "pre_install": "Get-ChildItem \"$dir\\clash-windows-*.exe\" | Rename-Item -NewName 'clash-premium.exe'",
     "bin": [
         [
             "clash-premium.exe",
