@@ -1,0 +1,38 @@
+{
+    "version": "3.7h",
+    "description": "A utility to download images/videos/music/text from various websites, and more.",
+    "homepage": "https://github.com/KurtBestor/Hitomi-Downloader",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/KurtBestor/Hitomi-Downloader/releases/download/v3.7h/hitomi_downloader_GUI.zip",
+            "hash": "dab6b459a71bbe33770d333521a2af52116cbb900dc7a4b4ccd030096d03fc8d"
+        }
+    },
+    "pre_install": [
+        "ensure \"$persist_dir\" | Out-Null",
+        "Copy-Item -Path \"$persist_dir\\hitomi_downloader_GUI.ini\" -Destination \"$dir\" -Force -ErrorAction SilentlyContinue"
+    ],
+    "uninstaller": {
+        "script": [
+            "Copy-Item -Path \"$dir\\hitomi_downloader_GUI.ini\" -Destination \"$persist_dir\" -Force -ErrorAction SilentlyContinue"
+        ]
+    },
+    "shortcuts": [
+        [
+            "hitomi_downloader_GUI.exe",
+            "Hitomi Downloader"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/KurtBestor/Hitomi-Downloader",
+        "regex": "/v([\\d.]+[a-z]{0,1})/hitomi_downloader"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/KurtBestor/Hitomi-Downloader/releases/download/v$version/hitomi_downloader_GUI.zip"
+            }
+        }
+    }
+}
