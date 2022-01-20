@@ -1,0 +1,37 @@
+{
+    "version": "2022.01.03",
+    "description": "A rule-based tunnel with TUN support and more. (close-sourced)",
+    "homepage": "https://github.com/Dreamacro/clash",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-amd64-2022.01.03.zip",
+            "hash": "36963b5419c9b0d5403b41854b548df09f4ca722f54b341b8e1bfb4d93fa0cbe"
+        },
+        "32bit": {
+            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-386-2022.01.03.zip",
+            "hash": "86c80d994e3df131bd9410869ed9d23b438d08b8d6b6684f01b5aba4a92b0269"
+        }
+    },
+    "pre_install": "Get-ChildItem \"$dir\\clash-windows-*.exe\" | Rename-Item 'clash-premium.exe'",
+    "bin": [
+        [
+            "clash-premium.exe",
+            "clash-premium"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/Dreamacro/clash/releases/tag/premium",
+        "regex": "/premium/clash-windows-amd64-([\\d.]+)\\.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-amd64-$version.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-386-$version.zip"
+            }
+        }
+    }
+}
