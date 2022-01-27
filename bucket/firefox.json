@@ -15,7 +15,18 @@
     },
     "extract_dir": "core",
     "bin": "firefox.exe",
-    "post_install": "firefox -CreateProfile \"Scoop $dir\\profile\"",
+    "post_install": [
+        "$fresh = !(Test-Path \"$env:APPDATA\\Mozilla\\Firefox\\profiles.ini\")",
+        "$profiles_ini = @\"",
+        "[Profile0]",
+        "Name=Scoop",
+        "IsRelative=0",
+        "Path=$dir\\profile",
+        "Default=1",
+        "\"@",
+        "if ($fresh) { $profiles_ini | Out-File \"$env:APPDATA\\Mozilla\\Firefox\\profiles.ini\" -Force }",
+        "firefox -CreateProfile \"Scoop $dir\\profile\""
+    ],
     "shortcuts": [
         [
             "firefox.exe",
