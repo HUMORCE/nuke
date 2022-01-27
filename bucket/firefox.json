@@ -15,6 +15,7 @@
     },
     "extract_dir": "core",
     "bin": "firefox.exe",
+    "post_install": "firefox -CreateProfile \"Scoop $dir\\profile\"",
     "shortcuts": [
         [
             "firefox.exe",
