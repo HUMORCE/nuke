@@ -1,5 +1,8 @@
-/checkver*
 /.cache/
 /.vagrant/
+/bucket-json/
 /bucket-wip/
-/bucket/wip_*
+/bucket-yaml/
+/bucket/_*.json
+/checkver*
+/cmd/
