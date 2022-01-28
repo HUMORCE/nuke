@@ -1,17 +1,17 @@
 {
-    "version": "1.2.0",
+    "version": "1.2.2",
     "description": "Open source anti-rookit(ARK) tool for Windows.",
     "homepage": "https://openark.blackint3.com",
     "license": "LGPL-2.1-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/BlackINT3/OpenArk/releases/download/v1.2.0/OpenArk64.exe",
-            "hash": "826914bc8dc3ec8abfbd5a4bf2445fb3b399f85c6e550214631cc79ae967431e",
+            "url": "https://github.com/BlackINT3/OpenArk/releases/download/v1.2.2/OpenArk64.exe",
+            "hash": "b862bc0acc87b217b7444c7f1b5262bce723015b6f33ad39d582fbc9e5cc7b69",
             "pre_install": "Rename-Item \"$dir\\OpenArk64.exe\" 'OpenArk.exe'"
         },
         "32bit": {
-            "url": "https://github.com/BlackINT3/OpenArk/releases/download/v1.2.0/OpenArk32.exe",
-            "hash": "0c760f0eafb1c7fcd6d9da46730fcb41ecd5862a7ba7ecf0ad0355b1bc655a21",
+            "url": "https://github.com/BlackINT3/OpenArk/releases/download/v1.2.2/OpenArk32.exe",
+            "hash": "0638cda0874405a313e70ef71dbad4ff5fc0437e0abbd462d7f3075fb8982f16",
             "pre_install": "Rename-Item \"$dir\\OpenArk32.exe\" 'OpenArk.exe'"
         }
     },
