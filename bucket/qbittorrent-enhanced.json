@@ -16,13 +16,19 @@
             "hash": "3f1587f12cdd85e49d030d2bf912267bebb5c758915d7419ee84645b3120e057"
         }
     },
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+    "bin": [
+        [
+            "qbittorrent.exe",
+            "qbittorrent-enhanced"
+        ]
+    ],
     "shortcuts": [
         [
             "qbittorrent.exe",
-            "qBittorrent"
+            "qBittorrent Enhanced"
         ]
     ],
-    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
     "persist": "profile",
     "checkver": {
         "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/latest",
