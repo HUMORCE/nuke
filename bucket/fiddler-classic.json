@@ -9,17 +9,14 @@
         "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\FiddlerSetup.exe\" \"$dir\" -Removal"
     },
     "post_install": [
-        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
-        "if (!(Test-Path $persist_dir\\persist\\Scripts)) { New-Item -Path \"$persist_dir\\persist\\Scripts\" -ItemType Directory | Out-Null }",
-        "Copy-Item -Path \"$persist_dir\\persist\\*\" -Destination $dir -ErrorAction SilentlyContinue -Recurse -Force"
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse"
     ],
     "shortcuts": [
         [
             "Fiddler.exe",
-            "Fiddler"
+            "Fiddler Classic"
         ]
     ],
-    "persist": "persist",
     "checkver": {
         "url": "https://www.fiddler2.com/UpdateCheck.aspx?isBeta=False",
         "useragent": "Fiddler/$version",
