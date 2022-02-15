@@ -1,5 +1,5 @@
 {
-    "version": "4.1.2",
+    "version": "4.1.3",
     "description": "A terminal based graphical activity monitor inspired by gtop and vtop.",
     "homepage": "https://github.com/xxxserxxx/gotop",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xxxserxxx/gotop/releases/download/v4.1.2/gotop_v4.1.2_windows_amd64.zip",
-            "hash": "3977af8a7ebd7ac997cafdb2404a96d457090a07738649c12ec87682ffc3784f"
+            "url": "https://github.com/xxxserxxx/gotop/releases/download/v4.1.3/gotop_v4.1.3_windows_amd64.zip",
+            "hash": "b754d81b88c9f477ba5ce60c36b331bad5d9cadd076db8be8f01cfbed60c1386"
         },
         "32bit": {
-            "url": "https://github.com/xxxserxxx/gotop/releases/download/v4.1.2/gotop_v4.1.2_windows_386.zip",
-            "hash": "c81919623edb6ec8cf2579bd15c6ac821d94b3324d79b090c180bac0be3d8a5f"
+            "url": "https://github.com/xxxserxxx/gotop/releases/download/v4.1.3/gotop_v4.1.3_windows_386.zip",
+            "hash": "3e414e7e2fc74b1a7613ca0d31a236ee7b166bb650dba3920297e89a1fb0a381"
         }
     },
     "bin": "gotop.exe",
