@@ -7,21 +7,24 @@ $app = "$app_dir\$app_version"
 $data = "$env:APPDATA\duowan\yy\"
 
 $components =
-"components\com.yy.cefdev2",
-"components\com.yy.gameproxy",
-"components\com.yy.processservice",
-"components\com.yy.vip"
+"com.yy.cefdev2",
+"com.yy.gameproxy",
+"com.yy.processservice",
+"com.yy.videoservice",
+"com.yy.vip"
 
 $junks =
 "BugReport.exe",
 "crashreport.dll",
 "dwupdate.dll",
 "installstat.exe",
-"libcurl.dll",
 "p2ppunch.dll",
+"preloadexternalproxy.dll",
 "RoVee.dll",
+"udbreportsdk.dll",
 "videotools.dll",
 "widgetchannel.dll",
+"YY.exe",
 "yyacc.dll",
 "yyaccessiblehelper.dll",
 "yyadhelper.dll",
@@ -29,26 +32,22 @@ $junks =
 "yychappplatform.dll",
 "yyiecontainer.dll",
 "yyp2pvideohandler.dll",
+"yypersonalfont.dll",
 "yyplugin.dll",
+"yyrun.exe",
+"yysdkcontainer.dll",
 "yystatistics.dll",
 "yyversion.dll",
-"yyvoicechanger.dll",
-# addictions
-"preloadexternalproxy.dll",
-"udbreportsdk.dll",
-"YY.exe",
-"yypersonalfont.dll",
-"yyrun.exe",
-"yysdkcontainer.dll"
+"yyvoicechanger.dll"
 
 foreach ($junk in $junks) {
-    Remove-Item "$app\$junk" -Force -Recurse
+    Remove-Item "$app\$junk" -Force
 }
 
 foreach ($component in $components) {
-    Remove-Item "$app\$component" -Force -Recurse
-    New-Item "$app\$component" -Force | Out-Null
-    (Get-Item "$app\$component").Attributes = "Readonly"
+    Remove-Item "$app\components\$component" -Force -Recurse
+    New-Item "$app\components\$component" -Force | Out-Null
+    (Get-Item "$app\components\$component").Attributes = "Readonly"
 }
 
 if (Test-Path $data) {
