@@ -32,8 +32,7 @@
     "shortcuts": [
         [
             "firefox.exe",
-            "Firefox",
-            "-profile \"$dir\\profile\""
+            "Firefox"
         ],
         [
             "firefox.exe",
