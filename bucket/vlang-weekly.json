@@ -1,7 +1,7 @@
 {
     "version": "2022.07",
     "description": "Simple, fast, safe, compiled. For developing maintainable software.",
-    "homepage": "https://vlang.io",
+    "homepage": "https://vlang.io/",
     "license": "MIT",
     "url": "https://github.com/vlang/v/releases/download/weekly.2022.07/v_windows.zip",
     "hash": "5acb3213acc532faa6cd17c96921860058a85489aeacd9c55d0e4371c6c8e4b3",

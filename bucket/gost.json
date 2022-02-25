@@ -1,7 +1,7 @@
 {
     "version": "2.11.1",
     "description": "A simple security tunnel written in Golang.",
-    "homepage": "https://gost.run",
+    "homepage": "https://gost.run/",
     "license": "MIT",
     "architecture": {
         "64bit": {

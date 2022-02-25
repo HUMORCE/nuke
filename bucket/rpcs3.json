@@ -1,7 +1,7 @@
 {
     "version": "0.0.20-13320",
     "description": "Open-source Sony PlayStation 3 emulator and debugger.",
-    "homepage": "https://rpcs3.net",
+    "homepage": "https://rpcs3.net/",
     "license": "GPL-2.0-or-later",
     "suggest": {
         "vcredist2019": "extras/vcredist2019"
