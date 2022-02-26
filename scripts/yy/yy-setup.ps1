@@ -31,6 +31,8 @@ $junks =
 "yybrowser.exe",
 "yychappplatform.dll",
 "yyiecontainer.dll",
+"yyp2pproxy.dll",
+"yyp2psrv.exe",
 "yyp2pvideohandler.dll",
 "yypersonalfont.dll",
 "yyplugin.dll",
