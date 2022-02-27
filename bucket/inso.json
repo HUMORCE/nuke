@@ -1,6 +1,6 @@
 {
     "version": "2.4.1",
-    "description": "API client for GraphQL, REST, and gRPC.",
+    "description": "API client for GraphQL, REST, and gRPC. (CLI)",
     "homepage": "https://insomnia.rest/products/inso",
     "license": "MIT",
     "architecture": {
