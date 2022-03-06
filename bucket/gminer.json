@@ -1,12 +1,12 @@
 {
-    "version": "2.84",
+    "version": "2.85",
     "description": "Ethash, ProgPoW, Equihash, CuckooCycle GPU Miner.",
     "homepage": "https://github.com/develsoftware/GMinerRelease",
     "license": "Public Domain",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/develsoftware/GMinerRelease/releases/download/2.84/gminer_2_84_windows64.zip",
-            "hash": "9db31e32eaeb64ae4c06fc9660910060908bf39959a291b2472521cab0060410"
+            "url": "https://github.com/develsoftware/GMinerRelease/releases/download/2.85/gminer_2_85_windows64.zip",
+            "hash": "dd320713bf03ab7ef2bcc4214710516af1a115d607738cbf0771ba8ae87dc209"
         }
     },
     "bin": [
