@@ -1,12 +1,12 @@
 {
-    "version": "2.5.0",
+    "version": "2.5.2",
     "description": "API client for GraphQL, REST, and gRPC. (CLI)",
     "homepage": "https://insomnia.rest/products/inso",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Kong/insomnia/releases/download/lib%402.5.0/inso-windows-2.5.0.zip",
-            "hash": "c5594efafd9c162228c71811d2c9a6c047e62a787a625d5e2fc2ef2a6b0d3225"
+            "url": "https://github.com/Kong/insomnia/releases/download/lib%402.5.2/inso-windows-2.5.2.zip",
+            "hash": "736660aebb0f6cd4f412a912d983a837980558a383b0273f98510cd1f798868a"
         }
     },
     "bin": "inso.exe",
