@@ -12,7 +12,7 @@
     "bin": "inso.exe",
     "checkver": {
         "url": "https://github.com/Kong/insomnia/releases",
-        "regex": "inso-windows-([\\d.]+).zip"
+        "regex": "lib@([\\d.]+).zip"
     },
     "autoupdate": {
         "architecture": {
