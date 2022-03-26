@@ -5,7 +5,7 @@
     "license": "AGPL-3.0-only",
     "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.0.3/AppFlowy-windows-x86.zip",
     "hash": "0c193add077a823720cbfb22ea85d213078e12ff3ccfbd86845e612fdc85c5a6",
-    "extract_dir": "AppFlowy-Windows",
+    "extract_dir": "AppFlowy",
     "shortcuts": [
         [
             "app_flowy.exe",
