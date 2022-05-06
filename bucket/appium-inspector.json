@@ -1,10 +1,10 @@
 {
-    "version": "2022.5.1",
+    "version": "2022.5.2",
     "description": "A GUI inspector for mobile apps and more, powered by a (separately installed) Appium server.",
     "homepage": "https://github.com/appium/appium-inspector",
     "license": "Apache-2.0",
-    "url": "https://github.com/appium/appium-inspector/releases/download/v2022.5.1/Appium-Inspector-windows-2022.5.1.zip",
-    "hash": "9c33efb1db40dd1db3eaf2ba7903f2d021dc24eac9c02b759e2c174bd4d8e8d5",
+    "url": "https://github.com/appium/appium-inspector/releases/download/v2022.5.2/Appium-Inspector-windows-2022.5.2.zip",
+    "hash": "babd4ad6388457ecdfc2c028bf81aee545f3039260fe6c5eba7611e030d66f8d",
     "shortcuts": [
         [
             "Appium Inspector.exe",
