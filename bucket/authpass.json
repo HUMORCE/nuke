@@ -1,0 +1,30 @@
+{
+    "version": "1.9.4_1872",
+    "description": "Password manager, compatible with KeePass.",
+    "homepage": "https://authpass.app/",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/authpass/authpass/releases/download/v1.9.4/AuthPass-setup-1.9.4_1872.exe",
+            "hash": "a987ba177ce85b092aa633c2e5d6bab78e4199e28a0a193007a561c8061fbcd6"
+        }
+    },
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "authpass.exe",
+            "AuthPass"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/authpass/authpass",
+        "regex": "AuthPass-setup-(?<version>(?<ver>[\\d.]+)_(?<patch>\\d+)).exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/authpass/authpass/releases/download/v$matchVer/AuthPass-setup-$version.exe"
+            }
+        }
+    }
+}
