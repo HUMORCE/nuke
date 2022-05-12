@@ -15,26 +15,6 @@
         }
     },
     "extract_dir": "ungoogled-chromium_101.0.4951.54-1.1_windows",
-    "bin": [
-        [
-            "chrome.exe",
-            "chromium",
-            "--user-data-dir=\"$dir\\User Data\""
-        ]
-    ],
-    "shortcuts": [
-        [
-            "chrome.exe",
-            "Chromium",
-            "--user-data-dir=\"$dir\\User Data\""
-        ]
-    ],
-    "post_install": [
-        "if (!(Test-Path \"$dir\\User Data\\*\") -and (Test-Path \"$env:LocalAppData\\Chromium\\User Data\")) {",
-        "    info '[Portable Mode]: Copying user data...'",
-        "    Copy-Item \"$env:LocalAppData\\Chromium\\User Data\\*\" \"$dir\\User Data\" -Recurse",
-        "}"
-    ],
     "checkver": {
         "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases",
         "regex": "ungoogled-chromium_(?<version>[\\d.]+-\\d).(?<release>\\d)_windows"
