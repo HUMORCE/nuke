@@ -1,5 +1,5 @@
 {
-    "##": "UNAVAILABLE",
+    "##": "UNAVAILABLE: https://bugs.chromium.org/p/chromium/issues/detail?id=1278166",
     "version": "101.0.4951.54-1",
     "description": "Google Chromium, sans integration with Google.",
     "homepage": "https://github.com/Eloston/ungoogled-chromium",
