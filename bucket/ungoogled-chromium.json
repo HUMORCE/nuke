@@ -1,0 +1,61 @@
+{
+    "##": "UNAVAILABLE",
+    "version": "101.0.4951.54-1",
+    "description": "Google Chromium, sans integration with Google.",
+    "homepage": "https://github.com/Eloston/ungoogled-chromium",
+    "license": "BSD-3-Clause",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases/download/101.0.4951.54-1/ungoogled-chromium_101.0.4951.54-1.1_windows_x64.zip",
+            "hash": "b042c469eeb8ee5e32944262fefaf20183fd6d70482e2173925d3da3affa0f9b"
+        },
+        "32bit": {
+            "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases/download/101.0.4951.54-1/ungoogled-chromium_101.0.4951.54-1.1_windows_x86.zip",
+            "hash": "b2e9d7fa9d87d5fdd86de331861ab75a19ad9968040ddddf3087179dc261dd14"
+        }
+    },
+    "extract_dir": "ungoogled-chromium_101.0.4951.54-1.1_windows",
+    "bin": [
+        [
+            "chrome.exe",
+            "chromium",
+            "--user-data-dir=\"$dir\\User Data\""
+        ]
+    ],
+    "shortcuts": [
+        [
+            "chrome.exe",
+            "Chromium",
+            "--user-data-dir=\"$dir\\User Data\""
+        ]
+    ],
+    "post_install": [
+        "if (!(Test-Path \"$dir\\User Data\\*\") -and (Test-Path \"$env:LocalAppData\\Chromium\\User Data\")) {",
+        "    info '[Portable Mode]: Copying user data...'",
+        "    Copy-Item \"$env:LocalAppData\\Chromium\\User Data\\*\" \"$dir\\User Data\" -Recurse",
+        "}"
+    ],
+    "checkver": {
+        "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases",
+        "regex": "ungoogled-chromium_(?<version>[\\d.]+-\\d).(?<release>\\d)_windows"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases/download/$version/ungoogled-chromium_$version.$matchRelease_windows_x64.zip",
+                "hash": {
+                    "url": "https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/windows/64bit/$version",
+                    "regex": "ungoogled-chromium_$version.$matchRelease_windows_x64.zip<\\/a>.*\\n.*\\n.*\\n.*SHA256: <code>([a-z0-9]+)<\\/code>"
+                }
+            },
+            "32bit": {
+                "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases/download/$version/ungoogled-chromium_$version.$matchRelease_windows_x86.zip",
+                "hash": {
+                    "url": "https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/windows/32bit/$version",
+                    "regex": "ungoogled-chromium_$version.$matchRelease_windows_x86.zip<\\/a>.*\\n.*\\n.*\\n.*SHA256: <code>([a-z0-9]+)<\\/code>"
+                }
+            }
+        },
+        "extract_dir": "ungoogled-chromium_$version.$matchRelease_windows"
+    }
+}
