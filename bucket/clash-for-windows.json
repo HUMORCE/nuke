@@ -3,6 +3,10 @@
     "description": "A Windows GUI based on Clash.",
     "homepage": "https://github.com/Fndroid/clash_for_windows_pkg",
     "license": "MIT",
+    "notes": [
+        "For TUN mode users, execute this script to import the firewall rule after install/update:",
+        "'sudo $dir\\allow-clash-premium.ps1'"
+    ],
     "architecture": {
         "64bit": {
             "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.18/Clash.for.Windows-0.19.18-win.7z",
@@ -13,6 +17,9 @@
             "hash": "f6e12b0862311f289e287b1ce6f91f112d8a5263b41ecdcd23ced68144610c22"
         }
     },
+    "pre_install": [
+        "\"New-NetFirewallRule -DisplayName '(Scoop) Allow Clash Premium - $version' -Direction Inbound -Action Allow -Program 'C:\\Users\\HUMOR\\scoop\\apps\\clash-for-windows\\$version\\resources\\static\\files\\win\\x64\\clash-win64.exe'\" | Out-File -Encoding ascii \"$dir\\allow-clash-premium.ps1\""
+    ],
     "shortcuts": [
         [
             "Clash for Windows.exe",
