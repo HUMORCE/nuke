@@ -25,13 +25,13 @@
     "bin": "yy-setup.ps1",
     "checkver": {
         "script": [
-            "(Invoke-WebRequest 'https://www.yy.com/web/pcyy_download/') -match 'src=\"//(?<js>web.yystatic.com.*js/index-.*.chunk.js)' | Out-Null",
-            "(Invoke-WebRequest $matches['js']) -match 'YYSetup-(?<version>[\\d.]+)-zh-CN.exe' | Out-Null",
-            "Write-Output $matches['version']"
+            "(Invoke-WebRequest 'https://www.yy.com/web/pcyy_download/') -match 'src=\"//(?<js>web.yystatic.com.*js/index-.*.chunk.js)'",
+            "(Invoke-WebRequest $matches['js']) -match 'https://yydl.yy.com.*-zh-CN.exe'",
+            "Write-Output $matches[0]"
         ],
-        "regex": "([\\d.]*)"
+        "regex": "(?<dlurl>https.*YYSetup-(?<version>[\\d.]+).*exe)"
     },
     "autoupdate": {
-        "url": "https://yydl.yy.com/4/setup/YYSetup-$version-zh-CN.exe#/dl.7z"
+        "url": "$matchDlurl#/dl.7z"
     }
 }
