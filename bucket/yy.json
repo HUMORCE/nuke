@@ -1,5 +1,5 @@
 {
-    "version": "9.7.0.0",
+    "version": "9.4.0.0",
     "description": "YY voice with componentless.",
     "homepage": "https://www.yy.com/yy8/",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://zc.yy.com/license.html"
     },
     "url": [
-        "https://yydl.yy.com/4/setup/YYSetup-9.7.0.0-zh-CN.exe#/dl.7z",
+        "https://yydl.yy.com/4/setup/YYSetup-9.4.0.0-zh-CN.exe#/dl.7z",
         "https://raw.githubusercontent.com/HUMORCE/scoop-nuke/master/scripts/yy/yy-setup.ps1"
     ],
     "hash": [
@@ -30,8 +30,5 @@
             "Write-Output $matches[0]"
         ],
         "regex": "(?<dlurl>https.*YYSetup-(?<version>[\\d.]+).*exe)"
-    },
-    "autoupdate": {
-        "url": "$matchDlurl#/dl.7z"
     }
 }
