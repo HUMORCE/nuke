@@ -1,12 +1,12 @@
 {
-    "version": "1.9.5_1896",
+    "version": "1.9.6_1904",
     "description": "Password manager, compatible with KeePass.",
     "homepage": "https://authpass.app/",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/authpass/authpass/releases/download/v1.9.5/AuthPass-setup-1.9.5_1896.exe",
-            "hash": "46c44513a92332ed764f558fdfe75af95a1b733d7212551989847dfd5b2766c1"
+            "url": "https://github.com/authpass/authpass/releases/download/v1.9.6/AuthPass-setup-1.9.6_1904.exe",
+            "hash": "f7a098607aa0b64b72debff5a00963cd7dfcfb6ace253c871555251c37b2daa3"
         }
     },
     "innosetup": true,
