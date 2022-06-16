@@ -1,20 +1,20 @@
 {
     "##": "UNAVAILABLE: https://bugs.chromium.org/p/chromium/issues/detail?id=1278166",
-    "version": "101.0.4951.54-1",
+    "version": "102.0.5005.115-1",
     "description": "Google Chromium, sans integration with Google.",
     "homepage": "https://github.com/Eloston/ungoogled-chromium",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases/download/101.0.4951.54-1/ungoogled-chromium_101.0.4951.54-1.1_windows_x64.zip",
-            "hash": "b042c469eeb8ee5e32944262fefaf20183fd6d70482e2173925d3da3affa0f9b"
+            "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases/download/102.0.5005.115-1/ungoogled-chromium_102.0.5005.115-1.1_windows_x64.zip",
+            "hash": "c9de72f3f3803c1025a89262d70822ad68990c805c200aa6263cd89fdab25f66"
         },
         "32bit": {
-            "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases/download/101.0.4951.54-1/ungoogled-chromium_101.0.4951.54-1.1_windows_x86.zip",
-            "hash": "b2e9d7fa9d87d5fdd86de331861ab75a19ad9968040ddddf3087179dc261dd14"
+            "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases/download/102.0.5005.115-1/ungoogled-chromium_102.0.5005.115-1.1_windows_x86.zip",
+            "hash": "582874bd96e310dbb867a09a746ba664e0c3a70cd3b21aed9f8477b5894c26e3"
         }
     },
-    "extract_dir": "ungoogled-chromium_101.0.4951.54-1.1_windows",
+    "extract_dir": "ungoogled-chromium_102.0.5005.115-1.1_windows",
     "checkver": {
         "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases",
         "regex": "ungoogled-chromium_(?<version>[\\d.]+-\\d).(?<release>\\d)_windows"
