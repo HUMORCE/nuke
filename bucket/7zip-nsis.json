@@ -1,16 +1,16 @@
 {
-    "version": "21.07",
+    "version": "22.00",
     "homepage": "https://github.com/myfreeer/7z-build-nsis",
     "description": "7zip with NSIS script decompliling.",
     "license": "LGPL-2.1-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/myfreeer/7z-build-nsis/releases/download/21.07/7z2107-x64.exe#/dl.7z",
-            "hash": "f7d8cb96ab3c221b5a123ab34b0bb0b8f85339203456969698c936365c3264b7"
+            "url": "https://github.com/myfreeer/7z-build-nsis/releases/download/22.00/7z2200-x64.exe#/dl.7z",
+            "hash": "bfe0ff6ab8343d72400d7a5cda771b7a7f5acc4c9491c168240e904db1b91b77"
         },
         "32bit": {
-            "url": "https://github.com/myfreeer/7z-build-nsis/releases/download/21.07/7z2107-x86.exe#/dl.7z",
-            "hash": "d54639e96234cb02e45e8817294c34585872a6469aea0f863538bf69c71815e1"
+            "url": "https://github.com/myfreeer/7z-build-nsis/releases/download/22.00/7z2200-x86.exe#/dl.7z",
+            "hash": "c5de170441061ee082840afc0edd5d6eecc04e324ed68c60ec789c712d3c4455"
         }
     },
     "checkver": "github",
