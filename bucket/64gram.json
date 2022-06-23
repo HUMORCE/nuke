@@ -1,5 +1,5 @@
 {
-    "version": "1.0.37",
+    "version": "1.0.38",
     "description": "Telegram Desktop enhanced edition.(unofficial)",
     "homepage": "https://64gr.am",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v1.0.37/64Gram_1.0.37_x64.zip",
-            "hash": "5c522715c8ce728dbc541e8a9662f62f6a9d645e1cc85c0c9df28c7adbe07e6f"
+            "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v1.0.38/64Gram_1.0.38_x64.zip",
+            "hash": "cb49a85018b2b08655175e0a73e0a2fd3f252c16342b7e4bdec1277fe5d2c34f"
         }
     },
     "shortcuts": [
