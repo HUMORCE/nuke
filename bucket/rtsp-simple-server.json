@@ -1,12 +1,12 @@
 {
-    "version": "0.19.1",
+    "version": "0.19.2",
     "description": "ready-to-use RTSP / RTMP / HLS server and proxy that allows to read, publish and proxy video and audio streams.",
     "homepage": "https://github.com/aler9/rtsp-simple-server",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/aler9/rtsp-simple-server/releases/download/v0.19.1/rtsp-simple-server_v0.19.1_windows_amd64.zip",
-            "hash": "6d80a7d08dab2cf01c4ff750618ea25e40a1b9002da969000044e3b08f971421"
+            "url": "https://github.com/aler9/rtsp-simple-server/releases/download/v0.19.2/rtsp-simple-server_v0.19.2_windows_amd64.zip",
+            "hash": "c6054e1870385798e902bd341e87b04251afa006da59a2494e98e89b52f00d66"
         }
     },
     "bin": "rtsp-simple-server.exe",
