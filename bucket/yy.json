@@ -1,34 +1,25 @@
 {
-    "version": "9.4.0.0",
-    "description": "YY voice with componentless.",
+    "version": "9.8.0.0",
+    "description": "YY voice chat.",
     "homepage": "https://www.yy.com/yy8/",
     "license": {
         "identifier": "EULA",
         "url": "https://zc.yy.com/license.html"
     },
-    "url": [
-        "https://yydl.yy.com/4/setup/YYSetup-9.4.0.0-zh-CN.exe#/dl.7z",
-        "https://raw.githubusercontent.com/HUMORCE/scoop-nuke/master/scripts/yy/yy-setup.ps1"
-    ],
-    "hash": [
-        "2d34843914c402a833bb007118ba5a67813a39e7026f3cb7f1c795987de2bbe4",
-        "b0f0a23a7985f9fe0bcd75c808fb6ae0d70453c6fa50c2ba1159f482ccfc208b"
-    ],
+    "url": "https://yydl.yy.com/4/setup/YYSetup-9.8.0.0-zh-CN.exe#/dl.7z",
+    "hash": "f039a52b6c72c28a5cc72a4837574072e8a154b55ecd1e66a3e8dff899139f50",
     "extract_dir": "InstallDir",
-    "post_install": "yy-setup.ps1 $dir $version",
     "shortcuts": [
         [
             "YY.exe",
             "YY"
         ]
     ],
-    "bin": "yy-setup.ps1",
     "checkver": {
-        "script": [
-            "(Invoke-WebRequest 'https://www.yy.com/web/pcyy_download/') -match 'src=\"//(?<js>web.yystatic.com.*js/index-.*.chunk.js)'",
-            "(Invoke-WebRequest $matches['js']) -match 'https://yydl.yy.com.*-zh-CN.exe'",
-            "Write-Output $matches[0]"
-        ],
-        "regex": "(?<dlurl>https.*YYSetup-(?<version>[\\d.]+).*exe)"
+        "url": "https://www.yy.com/index/t/download",
+        "regex": "YYSetup-([\\d.]*)-zh-CN.exe"
+    },
+    "autoupdate": {
+        "url": "https://yydl.yy.com/4/setup/YYSetup-$version-zh-CN.exe#/dl.7z"
     }
 }
