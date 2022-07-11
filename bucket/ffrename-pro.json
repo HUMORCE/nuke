@@ -1,5 +1,5 @@
 {
-    "version": "4.0",
+    "version": "5.0.6.9",
     "description": "A powerful batch rename program, but not just a renamer.",
     "homepage": "http://www.ffhome.com/works/1406.html",
     "license": {
@@ -8,12 +8,14 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://raw.githubusercontent.com/HUMORCE/nuke-binary/master/apps/ffrename-pro/FFRenamePro_x64_4.0.zip",
-            "hash": "b5661cf87b80f553dd24f391e90853c08eca8fc2f3b695ea323bc3d352b08062"
+            "url": "https://raw.githubusercontent.com/HUMORCE/nuke-binary/master/apps/ffrename-pro/FFRenamePro_x64_5.0.6.9.zip",
+            "hash": "146da88a84f2c33426263eb1438ee5c79e6148776a461140c9cc8da162056964",
+            "extract_dir": "FFRenamePro_x64"
         },
         "32bit": {
-            "url": "https://raw.githubusercontent.com/HUMORCE/nuke-binary/master/apps/ffrename-pro/FFRenamePro_x86_4.0.zip",
-            "hash": "fb3f7c6b58cd2a1b13ba0ee4104b0c2caa798f2e26c90acff6188f755f87110d"
+            "url": "https://raw.githubusercontent.com/HUMORCE/nuke-binary/master/apps/ffrename-pro/FFRenamePro_x86_5.0.6.9.zip",
+            "hash": "80c5c36ab9ea34cef505e7027a41109c0cd34a301f7c9f37e585cdf96f7b2639",
+            "extract_dir": "FFRenamePro_x86"
         }
     },
     "shortcuts": [
