@@ -1,10 +1,10 @@
 {
-    "version": "2.1.0.0",
+    "version": "2.1.1.0",
     "description": "automatically mute your PC volume on certain events. (e.g. Screensaver, Workstation Lock, Shutdown, etc.)",
     "homepage": "https://github.com/lx-s/WinMute",
     "license": "BSD-3-Clause",
-    "url": "https://github.com/lx-s/WinMute/releases/download/2.1.0.0/WinMute_2.1.0.0.zip",
-    "hash": "71f34870e9167b68b0b0e154024d2656587fc3448dc35af9f95cb2f4e1e1f84d",
+    "url": "https://github.com/lx-s/WinMute/releases/download/2.1.1.0/WinMute_2.1.1.0.zip",
+    "hash": "502f5fbe934209e17c875fa259e0f686f4aa3667dc236c212f5e5c303b0abd35",
     "shortcuts": [
         [
             "WinMute.exe",
