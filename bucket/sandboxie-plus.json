@@ -15,9 +15,12 @@
         }
     },
     "innosetup": true,
-    "persist": [
-        "Sandboxie.ini",
-        "Sandboxie-Plus.ini"
+    "pre_install": [
+        "ensure \"$persist_dir\" | Out-Null",
+        "Get-ChildItem \"$persist_dir\\*\" -Include 'Sandboxie.ini', 'Sandboxie-Plus.ini' | Copy-Item -Destination \"$dir\" -ErrorAction SilentlyContinue -Force"
+    ],
+    "pre_uninstall": [
+        "Get-ChildItem \"$dir\\*\" -Include 'Sandboxie.ini', 'Sandboxie-Plus.ini' | Copy-Item -Destination \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
     ],
     "shortcuts": [
         [
