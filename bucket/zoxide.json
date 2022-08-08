@@ -3,7 +3,7 @@
     "description": "A faster way to navigate your filesystem",
     "homepage": "https://github.com/ajeetdsouza/zoxide",
     "license": "MIT",
-    "notes": "_ZO_DATA_DIR is set to '$persist_dir\\zoxide'.",
+    "notes": "_ZO_DATA_DIR is set to '$persist_dir'.",
     "architecture": {
         "64bit": {
             "url": "https://github.com/ajeetdsouza/zoxide/releases/download/v0.8.2/zoxide-0.8.2-x86_64-pc-windows-msvc.zip",
@@ -14,7 +14,7 @@
     "checkver": "github",
     "pre_install": "ensure \"$persist_dir\" | Out-Null",
     "env_set": {
-        "_ZO_DATA_DIR": "$persist_dir\\zoxide"
+        "_ZO_DATA_DIR": "$persist_dir"
     },
     "autoupdate": {
         "architecture": {
