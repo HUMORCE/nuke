@@ -1,12 +1,12 @@
 {
-    "version": "0.7.0",
+    "version": "0.7.1",
     "description": "compression of PNG and JPEG, with a modern and friendly UI.",
     "homepage": "https://github.com/meowtec/Imagine",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/meowtec/Imagine/releases/download/v0.7.0/Imagine-Setup-0.7.0.exe#/dl.7z",
-            "hash": "3979cf04c1d8943fbc6f0edc0fb1cbd9b5a5af1102c0815ab8b8c5443ed98dd8",
+            "url": "https://github.com/meowtec/Imagine/releases/download/v0.7.1/Imagine-Setup-0.7.1.exe#/dl.7z",
+            "hash": "7d4ac3727516b8f2cfd150fbcfbb04bbe125c2acec77eb6d4da3578757b3b59f",
             "installer": {
                 "script": [
                     "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
