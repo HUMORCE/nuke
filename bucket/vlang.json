@@ -1,10 +1,10 @@
 {
-    "version": "0.3",
+    "version": "0.3.1",
     "description": "Simple, fast, safe, compiled. For developing maintainable software.",
     "homepage": "https://vlang.io/",
     "license": "MIT",
-    "url": "https://github.com/vlang/v/releases/download/0.3/v_windows.zip",
-    "hash": "3fc89deb5ac01d0db1647bdd91c24bd40204ade0bc30fe39cb969fcdb4f7a18e",
+    "url": "https://github.com/vlang/v/releases/download/0.3.1/v_windows.zip",
+    "hash": "5952b364b941e4cd3f8ab982c5c367fa750c1d339710eed53b05c194e7a77976",
     "extract_dir": "v",
     "bin": "v.exe",
     "checkver": {
