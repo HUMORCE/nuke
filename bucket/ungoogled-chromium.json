@@ -1,41 +1,56 @@
 {
     "##": "UNAVAILABLE: https://bugs.chromium.org/p/chromium/issues/detail?id=1278166",
-    "version": "101.0.4951.54-1",
+    "version": "106.0.5249.119-1.1",
     "description": "Google Chromium, sans integration with Google.",
-    "homepage": "https://github.com/Eloston/ungoogled-chromium",
+    "homepage": "https://ungoogled-software.github.io/ungoogled-chromium-binaries/",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases/download/101.0.4951.54-1/ungoogled-chromium_101.0.4951.54-1.1_windows_x64.zip",
-            "hash": "b042c469eeb8ee5e32944262fefaf20183fd6d70482e2173925d3da3affa0f9b"
+            "url": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/106.0.5249.119-1.1/ungoogled-chromium_106.0.5249.119-1.1_windows_x64.zip",
+            "hash": "3a6ab90e199cf5908652fd4c23036a41af6d3fd71b51e7becc03521f79a60a09"
         },
         "32bit": {
-            "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases/download/101.0.4951.54-1/ungoogled-chromium_101.0.4951.54-1.1_windows_x86.zip",
-            "hash": "b2e9d7fa9d87d5fdd86de331861ab75a19ad9968040ddddf3087179dc261dd14"
+            "url": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/106.0.5249.119-1.1/ungoogled-chromium_106.0.5249.119-1.1_windows_x86.zip",
+            "hash": "398b241ecf964dbbe14c702dcb2db94a3460d9d36d8436fcdb265d4b324fa9f0"
         }
     },
-    "extract_dir": "ungoogled-chromium_101.0.4951.54-1.1_windows",
+    "extract_dir": "ungoogled-chromium_106.0.5249.119-1.1_windows",
+    "bin": [
+        [
+            "chrome.exe",
+            "chromium",
+            "--user-data-dir=\"$dir\\User Data\""
+        ]
+    ],
+    "shortcuts": [
+        [
+            "chrome.exe",
+            "Chromium",
+            "--user-data-dir=\"$dir\\User Data\""
+        ]
+    ],
+    "persist": "User Data",
     "checkver": {
-        "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases",
-        "regex": "ungoogled-chromium_(?<version>[\\d.]+-\\d).(?<release>\\d)_windows"
+        "github": "https://github.com/ungoogled-software/ungoogled-chromium-windows",
+        "regex": "releases/tag/((?<main>[\\d.]+-\\d).(?<release>\\d))"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases/download/$version/ungoogled-chromium_$version.$matchRelease_windows_x64.zip",
+                "url": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/$version/ungoogled-chromium_$version_windows_x64.zip",
                 "hash": {
-                    "url": "https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/windows/64bit/$version",
-                    "regex": "ungoogled-chromium_$version.$matchRelease_windows_x64.zip<\\/a>.*\\n.*\\n.*\\n.*SHA256: <code>([a-z0-9]+)<\\/code>"
+                    "url": "https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/windows/64bit/$matchMain",
+                    "regex": "ungoogled-chromium_$version_windows_x64.zip<\\/a>.*\\n.*\\n.*\\n.*SHA256: <code>([a-z0-9]+)<\\/code>"
                 }
             },
             "32bit": {
-                "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases/download/$version/ungoogled-chromium_$version.$matchRelease_windows_x86.zip",
+                "url": "https://github.com/ungoogled-software/ungoogled-chromium-windows/releases/download/$version/ungoogled-chromium_$version_windows_x86.zip",
                 "hash": {
-                    "url": "https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/windows/32bit/$version",
-                    "regex": "ungoogled-chromium_$version.$matchRelease_windows_x86.zip<\\/a>.*\\n.*\\n.*\\n.*SHA256: <code>([a-z0-9]+)<\\/code>"
+                    "url": "https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/windows/32bit/$matchMain",
+                    "regex": "ungoogled-chromium_$version_windows_x86.zip<\\/a>.*\\n.*\\n.*\\n.*SHA256: <code>([a-z0-9]+)<\\/code>"
                 }
             }
         },
-        "extract_dir": "ungoogled-chromium_$version.$matchRelease_windows"
+        "extract_dir": "ungoogled-chromium_$version_windows"
     }
 }
