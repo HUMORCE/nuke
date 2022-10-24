@@ -3,10 +3,6 @@
     "description": "A Windows GUI based on Clash.",
     "homepage": "https://github.com/Fndroid/clash_for_windows_pkg",
     "license": "MIT",
-    "notes": [
-        "For TUN mode users, execute this script to import the firewall rule after install/update:",
-        "'sudo $dir\\allow-clash-premium.ps1'"
-    ],
     "architecture": {
         "64bit": {
             "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.6/Clash.for.Windows-0.20.6-win.7z",
@@ -15,6 +11,10 @@
         "32bit": {
             "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.6/Clash.for.Windows-0.20.6-ia32-win.7z",
             "hash": "b3b982fa5c9874e8974bbddf342cafb0adf856a29117586bfd858c710a4f8198"
+        },
+        "arm64": {
+            "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.6/Clash.for.Windows-0.20.6-arm64-win.7z",
+            "hash": "3e215555f161f13d76f0a69c1cc3b65b832235e3fd860804ab8e6b42a2164564"
         }
     },
     "pre_install": "\"New-NetFirewallRule -DisplayName '(Scoop) Allow Clash Premium - $version' -Direction Inbound -Action Allow -Program 'C:\\Users\\HUMOR\\scoop\\apps\\clash-for-windows\\$version\\resources\\static\\files\\win\\x64\\clash-win64.exe'\" | Out-File -Encoding ascii \"$dir\\allow-clash-premium.ps1\"",
@@ -40,6 +40,13 @@
                 "hash": {
                     "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/$version/sha256sum",
                     "regex": "^ia32-7z: $sha256"
+                }
+            },
+            "arm64": {
+                "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/$version/Clash.for.Windows-$version-arm64-win.7z",
+                "hash": {
+                    "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/$version/sha256sum",
+                    "regex": "^arm64-7z: $sha256"
                 }
             }
         }
