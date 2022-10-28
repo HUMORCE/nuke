@@ -17,7 +17,6 @@
             "hash": "3e215555f161f13d76f0a69c1cc3b65b832235e3fd860804ab8e6b42a2164564"
         }
     },
-    "pre_install": "\"New-NetFirewallRule -DisplayName '(Scoop) Allow Clash Premium - $version' -Direction Inbound -Action Allow -Program 'C:\\Users\\HUMOR\\scoop\\apps\\clash-for-windows\\$version\\resources\\static\\files\\win\\x64\\clash-win64.exe'\" | Out-File -Encoding ascii \"$dir\\allow-clash-premium.ps1\"",
     "shortcuts": [
         [
             "Clash for Windows.exe",
