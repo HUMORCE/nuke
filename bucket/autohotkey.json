@@ -1,10 +1,10 @@
 {
-    "version": "1.1.35.00",
+    "version": "1.1.36.00",
     "description": "The ultimate automation scripting language for Windows.",
     "homepage": "https://www.autohotkey.com/",
     "license": "GPL-2.0-or-later",
     "url": "https://www.autohotkey.com/download/ahk.zip",
-    "hash": "5d56ce5462cd0fc3ca64b2ae75da3e56776fd4e0dea9acd200bd28ddb5d85b37",
+    "hash": "bded3d493f73c584bea354499475f9f8fc802cf571813e7c7bbebffd1575e893",
     "architecture": {
         "64bit": {
             "bin": [
