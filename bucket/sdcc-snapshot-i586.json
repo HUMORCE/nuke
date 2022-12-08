@@ -8,7 +8,7 @@
     "extract_dir": "sdcc",
     "bin": "bin\\sdcc.exe",
     "checkver": {
-        "url": "https://sourceforge.net/projects/sdcc/rss?path=/snapshot_builds/i586-mingw32msvc",
+        "sourceforge": "sdcc/snapshot_builds/i586-mingw32msvc",
         "regex": "sdcc-snapshot-i586-mingw32msvc-([\\d]+-[\\d]+)"
     },
     "autoupdate": {
