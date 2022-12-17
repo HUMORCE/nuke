@@ -1,12 +1,12 @@
 {
-    "version": "20221216-13769",
+    "version": "20221217-13772",
     "description": "Small Device C Compiler. (x86_64-w64-mingw32)",
     "homepage": "http://sdcc.sourceforge.net/",
     "license": "GPL-2.0-only|GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://sourceforge.net/projects/sdcc/files/snapshot_builds/x86_64-w64-mingw32/sdcc-snapshot-x86_64-w64-mingw32-20221216-13769.zip",
-            "hash": "sha1:fba819a1cbe8aac3db10ede9b4ad31469d01e172"
+            "url": "https://sourceforge.net/projects/sdcc/files/snapshot_builds/x86_64-w64-mingw32/sdcc-snapshot-x86_64-w64-mingw32-20221217-13772.zip",
+            "hash": "sha1:7f487c0e122655e5811b38c5aea3ffb23a541129"
         }
     },
     "extract_dir": "sdcc",
