@@ -16,7 +16,11 @@
             "hash": "sha1:b16cd4f44f8f1359fc89eb8569943b9ae34fa243"
         }
     },
-    "pre_install": "if (!(Test-Path \"$persist_dir\\config.ini\")) { Set-Content \"$dir\\config.ini\" '' -Encoding ASCII }",
+    "pre_install": [
+        "if (Test-Path \"$persist_dir\\config.ini\") { Copy-Item \"$persist_dir\\config.ini\" \"$dir\" -Force }",
+        "else { Set-Content \"$dir\\config.ini\" '' -Encoding ASCII }"
+    ],
+    "pre_uninstall": "Copy-Item \"$dir\\config.ini\" \"$persist_dir\" -Force",
     "shortcuts": [
         [
             "Snipaste.exe",
@@ -24,8 +28,7 @@
         ]
     ],
     "persist": [
-        "history",
-        "config.ini"
+        "history"
     ],
     "checkver": {
         "url": "https://dl.snipaste.com/sha-1.txt",
