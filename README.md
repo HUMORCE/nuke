@@ -1,4 +1,4 @@
-# nuke
+# nuke [![Tests](https://github.com/HUMORCE/nuke/actions/workflows/ci.yml/badge.svg)](https://github.com/HUMORCE/nuke/actions/workflows/ci.yml) [![Excavator](https://github.com/HUMORCE/nuke/actions/workflows/excavator.yml/badge.svg)](https://github.com/HUMORCE/nuke/actions/workflows/excavator.yml)
 
 ## Add the bucket to Scoop
 
