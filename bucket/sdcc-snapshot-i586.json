@@ -1,10 +1,10 @@
 {
-    "version": "20230205-13854",
+    "version": "20230206-13855",
     "description": "Small Device C Compiler. (i586-mingw32msvc)",
     "homepage": "http://sdcc.sourceforge.net/",
     "license": "GPL-2.0-only|GPL-3.0-only",
-    "url": "https://sourceforge.net/projects/sdcc/files/snapshot_builds/i586-mingw32msvc/sdcc-snapshot-i586-mingw32msvc-20230205-13854.zip",
-    "hash": "sha1:657c1575debce55166391622bfb71d2b092b6018",
+    "url": "https://sourceforge.net/projects/sdcc/files/snapshot_builds/i586-mingw32msvc/sdcc-snapshot-i586-mingw32msvc-20230206-13855.zip",
+    "hash": "sha1:ed62b77d4edcf3f3a62ad577b22e50f0ca12cf92",
     "extract_dir": "sdcc",
     "bin": "bin\\sdcc.exe",
     "checkver": {
