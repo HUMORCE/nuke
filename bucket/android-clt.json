@@ -1,0 +1,40 @@
+{
+    "version": "9477386",
+    "description": "The official Android command line tools",
+    "homepage": "https://developer.android.com/studio#command-tools",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://developer.android.com/studio/terms.html"
+    },
+    "url": "https://dl.google.com/android/repository/commandlinetools-win-9477386_latest.zip",
+    "hash": "696431978daadd33a28841320659835ba8db8080a535b8f35e9e60701ab8b491",
+    "extract_to": "cmdline-tools",
+    "pre_install": "Rename-Item \"$dir\\cmdline-tools\\cmdline-tools\" -NewName 'latest'",
+    "env_add_path": "cmdline-tools\\latest\\bin",
+    "env_set": {
+        "ANDROID_HOME": "$dir"
+    },
+    "persist": [
+        "add-ons",
+        "build-tools",
+        "cmake",
+        "emulator",
+        "extras",
+        "ndk-bundle",
+        "ndk",
+        "patcher",
+        "platform-tools",
+        "platforms",
+        "skiaparser",
+        "sources",
+        "system-images"
+    ],
+    "checkver": "commandlinetools-win-(\\d+)",
+    "autoupdate": {
+        "url": "https://dl.google.com/android/repository/commandlinetools-win-$version_latest.zip",
+        "hash": {
+            "url": "https://developer.android.com/studio",
+            "regex": "commandlinetools-win(?:.*\\n){3}.*<td>($sha256)"
+        }
+    }
+}
