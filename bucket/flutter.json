@@ -1,0 +1,37 @@
+{
+    "version": "3.7.12",
+    "description": "Google's SDK for crafting beautiful, fast user experiences for mobile, web, and desktop",
+    "homepage": "https://flutter.dev",
+    "license": "BSD-3-Clause",
+    "notes": [
+        "Official Warning:",
+        "- If the installation path contains special characters or spaces, it may cause unexpected errors."
+    ],
+    "suggest": {
+        "Android Studio": "extras/android-studio",
+        "Android SDK Commandline Tools": "nuke/android-clt"
+    },
+    "url": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.7.12-stable.zip",
+    "hash": "31627616bed50083f6512ff72e65fc1887824554664bc7f25f3de023589d6137",
+    "extract_dir": "flutter",
+    "env_set": {
+        "FLUTTER_ROOT": "$dir"
+    },
+    "bin": [
+        "bin\\dart",
+        "bin\\dart.bat",
+        "bin\\flutter",
+        "bin\\flutter.bat"
+    ],
+    "checkver": {
+        "url": "https://storage.googleapis.com/flutter_infra_release/releases/releases_windows.json",
+        "regex": "windows_([\\d.]+)-stable"
+    },
+    "autoupdate": {
+        "url": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_$version-stable.zip",
+        "hash": {
+            "url": "https://storage.googleapis.com/flutter_infra_release/releases/releases_windows.json",
+            "jsonpath": "$.releases[?(@.archive =~ /.*flutter_windows_$version-stable.zip/)].sha256"
+        }
+    }
+}
