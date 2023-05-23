@@ -11,10 +11,9 @@
         {
             "url": "https://cdn.staticaly.com/gh/ScoopInstaller/Scoop/master/schema.json",
             "fileMatch": [
-                "bucket/*.json",
-                "bucket-wip/*.json",
-                "deprecated/*.json",
-                "removed/*.json"
+                "bucket/**/*.json",
+                "deprecated/**/*.json",
+                "removed/**/*.json",
             ]
         }
     ],
