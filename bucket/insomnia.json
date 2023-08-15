@@ -1,12 +1,12 @@
 {
-    "version": "2023.5.0",
+    "version": "2023.5.1",
     "description": "API client for GraphQL, REST, and gRPC",
     "homepage": "https://insomnia.rest/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Kong/insomnia/releases/download/core%402023.5.0/Insomnia.Core-2023.5.0-portable.exe#/dl.7z",
-            "hash": "411ef6a3d3bf00007db8099c019da1daa24b11387f021bdb1bdb073059aa2b8c"
+            "url": "https://github.com/Kong/insomnia/releases/download/core%402023.5.1/Insomnia.Core-2023.5.1-portable.exe#/dl.7z",
+            "hash": "fd50286e74aa444b964f7cbb939aa1efc027e5517f8b0d1b637a4e9c3b211153"
         }
     },
     "installer": {
