@@ -21,10 +21,10 @@
         "# Self contained mode",
         "if (Test-Path \"$persist_dir\\_sc_\") { Copy-Item \"$persist_dir\\_sc_\" \"$dir\\_sc_\" }"
     ],
-    "bin": "godot-mono.exe",
+    "bin": "godot.exe",
     "shortcuts": [
         [
-            "godot-mono.exe",
+            "godot.exe",
             "Godot Engine Mono"
         ]
     ],
