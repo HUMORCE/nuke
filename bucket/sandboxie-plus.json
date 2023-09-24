@@ -18,7 +18,10 @@
         }
     },
     "innosetup": true,
-    "pre_install": "Get-ChildItem \"$persist_dir\\*.ini\" | Copy-Item -Destination \"$dir\" -Force -ErrorAction SilentlyContinue",
+    "pre_install": [
+        "ensure \"$persist_dir\" | Out-Null",
+        "Get-ChildItem \"$persist_dir\\*.ini\" | Copy-Item -Destination \"$dir\" -Force -ErrorAction SilentlyContinue"
+    ],
     "shortcuts": [
         [
             "SandMan.exe",
