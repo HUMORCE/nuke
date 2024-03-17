@@ -1,5 +1,5 @@
 {
-    "version": "4.8.5",
+    "version": "4.9.0",
     "description": "Patches a given font with programming and development related glyphs",
     "homepage": "https://github.com/ryanoasis/nerd-fonts",
     "license": "MIT",
@@ -9,7 +9,7 @@
         "python": "python"
     },
     "url": "https://github.com/ryanoasis/nerd-fonts/raw/master/FontPatcher.zip",
-    "hash": "dd2f60c16f075912cad7c821db45d2465501de4709a5bb0401597de8c51f8ffa",
+    "hash": "d236805a272f6dce3263e455d6226155a0d85fc0dada5c67819f611ebee5f7ef",
     "pre_install": "Copy-Item \"$bucketsdir\\$bucket\\scripts\\$app\\$app.ps1\" \"$dir\"",
     "bin": "nerd-font-patcher.ps1",
     "checkver": {
