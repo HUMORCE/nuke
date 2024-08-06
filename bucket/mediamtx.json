@@ -10,7 +10,6 @@
         }
     },
     "bin": "mediamtx.exe",
-    "persist": "mediamtx.yml",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
