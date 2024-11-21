@@ -57,31 +57,31 @@
     "shortcuts": [
         [
             "msys2.exe",
-            "MSYS2/MSYS2"
+            "MSYS2/MSYS2 MSYS"
         ],
         [
             "mingw32.exe",
-            "MSYS2/MinGW32"
+            "MSYS2/MSYS2 MINGW32"
         ],
         [
             "mingw64.exe",
-            "MSYS2/MinGW64"
+            "MSYS2/MSYS2 MINGW64"
         ],
         [
             "ucrt64.exe",
-            "MSYS2/UCRT64"
+            "MSYS2/MSYS2 UCRT64"
         ],
         [
             "clang32.exe",
-            "MSYS2/Clang32"
+            "MSYS2/MSYS2 CLANG32"
         ],
         [
             "clang64.exe",
-            "MSYS2/Clang64"
+            "MSYS2/MSYS2 CLANG64"
         ],
         [
             "clangarm64.exe",
-            "MSYS2/ClangArm64"
+            "MSYS2/MSYS2 CLANGARM64"
         ]
     ],
     "persist": "home",
